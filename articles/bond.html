@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- <link rel="stylesheet" type="text/css" href="static/css/theme.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="static/css/custom.css" /> -->
+    <!-- Compass by Optimus Prime from the Noun Project -->
+    <link type="text/css" rel="stylesheet" href="../static/css/froala_blocks.css">
+    <!--<link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet"> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/js/try.js"></script>
+    <script type="text/javascript" src="../static/js/Markdown.Converter.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../static/css/fonts/fonts.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto" rel="stylesheet">
+    <script>
+
+        $(document).ready(function() {
+            var txt = $("#markdown").html();
+            var converter = new Markdown.Converter();
+            var htmlContent = converter.makeHtml(txt);
+            $('#markdown').html(htmlContent);
+            console.log("Success");
+        })
+    </script>
+
+    <style>
+
+        body {
+            font-family: 'Open Sans Condensed';
+        }
+
+        .block {
+            height: 20rem;
+            font-size: 1.5em;
+            padding-left: 0;
+            padding-right: 0;
+            // position: relative;
+            color: white;
+        }
+
+        .block-text {
+            padding-left: 0.5em;
+            padding-right:0.5em;
+            bottom: 0em;
+            font-family: 'Open Sans Condensed';
+            // position: absolute;
+            color: black;
+            // background-color: rgba(0, 0, 0, 0.5);
+            height: 5em;
+            width: 100%;
+        }
+
+        .cover {
+            position: relative;
+            padding-left: 10rem;
+            padding-right: 10rem;
+            color: black;
+            margin-bottom: 1em;
+            background-color: white !important;
+        }
+
+        .cover-text {
+            bottom: 0em;
+            position: absolute;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 74.5%; /* magic number */
+            padding-left: 1em;
+            margin-left: 10rem;
+            margin-right: 10rem;
+            font-size: 2em;
+            height: 3em;
+        }
+
+        .dark-text {
+            color: #000;
+        }
+
+        .cover-img {
+            object-fit: cover;
+            width: 100%;
+            height: 30rem;
+            padding-left: 10rem;
+            padding-right: 10rem;
+        }
+
+        .block-img {
+            object-fit: cover;
+            width: 100%;
+            height: 60%;
+        }
+
+        .wrapper {
+            margin-top: 5.25rem; /* magic number, do something legit later */
+            bottom: 40%;
+        }
+
+        #big-circle-thing {
+            margin: auto;
+            margin-top: 5%;
+            height: 90%;
+            width: 90%;
+            border-radius: 100%;
+            background-color:#ffffff;
+            font-size: 3em;
+            padding-top: 35%;
+            color: #000000;
+            left: auto;
+            right: auto;
+        }
+
+        #circle-wrapper {
+            // margin-left: 0em;
+            max-height: 100%;
+            background: repeating-linear-gradient(
+                45deg,
+                #333,
+                #333 5px,
+                #222 5px,
+                #222 10px
+            );
+        }
+
+        #cent {
+            border-color: #000000;
+            border-left: 3px;
+            border-right: 3px;
+            color: black;
+            font-size: 2em;
+            border: 1px !important;
+        }
+
+        #about {
+            background: repeating-linear-gradient(
+                45deg,
+                #606dbc,
+                #606dbc 10px,
+                #465298 10px,
+                #465298 20px
+            );
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            background-color: ;
+            // border-radius: 0.5em;
+        }
+
+        .dropdown-menu-item {
+            margin-left: 1em;
+            margin-right: 1em;
+            margin-bottom: 1em;
+        }
+
+        .dropdown-menu-item a:hover {
+            text-decoration: none;
+        }
+
+        .dropdown a{
+            color: black !important;
+        }
+
+        .content-row {
+            padding-left: 10rem;
+            padding-right: 10rem;
+        }
+
+        .block-intro {
+            font-size: 1rem;
+        }
+
+        .header-custom {
+            margin-bottom: 1.5em;
+            font-size: 1.25em;
+            margin-top: 1.5em;
+        }
+
+        #navbarNav3 {
+            margin-right: 10rem;
+        }
+
+        #navbar-img {
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        .navbar-brand {
+            margin-left: 10rem;
+            left: 0;
+        }
+
+        .navbar {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        #navbar-container {
+            min-width: 100% !important;
+            padding-left: 0;
+            padding-right: 0;
+            display: block;
+        }
+
+        .col-fill-8 {
+            width: 66%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+        }
+
+        img + em{
+            font-size: 0.8em;
+            display: block;
+            text-align: center;
+        }
+
+        #markdown img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 70%;
+        }
+
+        .navbar-toggler i {
+            color: #EEEEEE;
+        }
+
+        .author {
+            height: 10em;
+        }
+
+        .author-container {
+            margin-right: 0;
+        }
+
+        .author-info {
+            border: 1em;
+            border-color: #999999;
+        }
+
+        #content {
+            margin-top: 55vh;
+            color: #FFFFFF;
+        }
+
+        #markdown {
+            margin-top: 2em;
+            font-family: "Roboto";
+            text-align: justify;
+        }
+
+        #markdown p {
+            text-align: justify;
+            font-size: 1.05rem;
+        }
+
+        h1 {
+            font-family: "Libre Baskerville";
+        }
+        h2 {
+            font-family: "Libre Baskerville";
+        }
+        h3 {
+            font-family: "Libre Baskerville";
+        }
+        h4 {
+            font-family: "Libre Baskerville";
+        }
+        h5 {
+            font-family: "Libre Baskerville";
+        }
+        h6 {
+            font-family: "Libre Baskerville";
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header-custom">
+        <div class="container" id="navbar-container">
+            <nav class="navbar navbar-expand-md">
+                <a class="navbar-brand" href="#">
+                    <img src="../static/img/logo_black.png" height="30" alt="The Timeless Compass" id="navbar-img">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav3" aria-controls="navbarNav3" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav3">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><strong>Home</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><strong>About</strong></a>
+                        </li>
+                    </ul>
+                    <div class="dropdown">
+                        <a id="categories" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"><strong>Categories</strong></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-menu-item">
+                                <a href="#">Politics and Current Affairs</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="#">Lifestyle</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="#">Pop Culture</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="#">Literature and Philosophy</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="#">Regions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 pl-0 pr-0 cover">
+                <img alt="image" class="img-fluid cover-img mt-1" src="../static/img/article_1_alt.jpg">
+                <div class="cover-text">
+                    The Name’s Bond – James, Bonded to Ideology
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col col-md-8 text-left" id="markdown">
+Fifty-five years ago, on the 5th of October, 1962, James Bond premiered in London. The arrival of James Bond to the big screen, via Dr. No, heralded a development in cinema unprecedented in scale – over fifty years, it produced twenty-four more films and generated eleven billion dollars in revenue (adjusted for inflation). It also marked the reinvention of the secret agent as a cultural and sex symbol alongside an increasingly liberal Western world.
+
+Or did it? In each and every Bond film, two things hold constant – the girl and the goon. What distinguishes James Bond from any other franchise superhero is the presence of these supplements, yet neither did truly reinvent the masculine identity – still riddled with an age-old obsession with female objectification and ethnocentrism. The Bond girl, typically in her late twenties, serves as a sex object for our main hero, and is sexualised as such on screen. She also exists to drive the plot forward in the interest of cementing Bond’s heroic stature, as seen when Bond embarks on death-defying missions to rescue her (Dr. No, The Spy Who Loved Me etc.) or avenge her death (On Her Majesty’s Secret Service). Similarly, the villain is often characterised as a one-sided, overarching axis of evil who either seeks to rule (Ernst Stavro Blofeld, leader of the terrorist group SPECTRE) or destroy the world. For a villain to become a Bond villain, he must also possess a propensity for brutal, unflinching violence. He also hails, typically, from an obscure, Eastern European (read: commie) country, and has some part of him physically deformed.
+
+From this, it appears that Bond’s character is far from a force of liberation or of feminist and post-colonial emancipation – what the liberal world holds him up to be. The Bond girl has come under increasing attack for perpetuating outmoded gender stereotypes and outright misogyny; so, too, have the villains, for being hopelessly racist caricatures of the “Orient”. James Bond has been denounced by critics and theorists alike as an outdated persona, an irrelevant franchise in need of great change in order to fit in with the modern world.
+
+Yet, how does this explain why James Bond continues to be so popular with both young and old – even in a world much more averse to accusations of racism and sexism?
+
+This problem is quickly resolved once we come to the realisation that James Bond isn’t simply a static, ahistorical figure, as universal today as he was in the 1950s. While he, on the surface, continues to be defined by his womanising ways and hyper-masculine traits, these are not really old-fashioned tropes for which the modern world has no tolerance for. In fact, these traits continue to proliferate counter to, and sometimes alongside, a prevailing sense of liberalism. In other words, the franchise that comes to mind whenever we view a spy chase or lovemaking scene is not necessarily obsolete in its treatment of gender, race, or sexuality.
+
+In fact, it is reductive to pinpoint a certain set of stylistics that characterises the series – throughout the decades, a significant evolution in terms of form and style has taken place to adapt to changing geopolitical and cultural landscapes. To better appreciate this, let us unpack the roles and functions that make James Bond who he is today.
+
+If we could sum up Bond’s existence and significance in three roles, spy-hero, techie, and playboy would do the job. 007 is, first and foremost, an MI6 agent serving his nation and the Queen in defeating all that is evil, all the shadows that threaten to undermine the light of the British Crown. To do so he relies, sometimes overly, on cutting-edge military technology. His cars are fitted with various contraptions both offensive and defensive, and his watches shoot darts at unsuspecting foes.
+
+In Diamonds are Forever, Bond impersonates a diamond smuggler by using false fingerprints; thirty years later, in Die Another Day, he gets to ride in an invisible car. And supplementing all this is the final, yet crucial, part of the package – the Bond girl, sometimes his love interest, mostly just his plaything. The first ever to grace Bond’s presence, Ursula Andress, made her on-screen debut emerging, bikini-clad, from the sea. In Goldfinger, Honor Blackman is cured of her lesbianism after being seduced by Bond, who forces himself upon her despite her resistance. Monica Bellucci, the latest and oldest to assume the role (Spectre), is an accessory for information and a convenient tryst partner – they have sex barely seven minutes into her on-screen time.
+
+All this points to Bond as a perpetual womaniser who simply will not function without one-night stands and his array of dangerous gadgets. But one-night stands and dangerous gadgets do not simply make a man. They are cultural symbols that have been manufactured by larger historical trends, not artefacts in and of themselves, and should be treated as such. Bond’s primary function as international spy should likewise be read in context with changing patterns of ideological consumption.
+
+<br>
+
+### The changing faces of Bond’s enemies
+
+Take, for example, this function of international spy that James Bond fulfils. When one watches the early films (those with Sean Connery and Roger Moore), one is almost always filled with a dread in reaction towards a particular enemy. Dr. No, eponymous villain of the first film, is of Chinese and German descent, effectively synthesising the two biggest Western fears of Fascism and the rising matrix of Oriental Communism. In From Russia with Love, the main antagonist hails from Soviet Russia; her name, Rosa Klebb, alludes to the “bread and roses” slogan used by the dreaded labour unions. Bond defeats these enemies and expresses the triumph of capitalist imperialism over these failed -isms, essentially asserting a more fundamental ethno-centrism by marginalising everyone outside America and Western Europe’s direct purview.
+
+However, the later films feature a more menacing enemy – the invisible big Other, unconstrained by national interests or sovereignty. Is Skyfall not about the biggest global threat since nuclear escalation – the obtaining and manipulation of secret-intelligence data – offering a comparison with the potential of transnational hacking efforts? Tomorrow Never Dies features a media don whose creation of catastrophes in order to boost coverage and profits parallels the like of left- and right-wing news outlets alike, who influence and sometimes help to spawn events, stories, headlines that further their varying political agendas. In these instances, Bond’s saving the day averts the crisis while preserving the logic that created them, that of a globalist, internationalist ideology that supports a cloud-based system of data-sharing and the promulgation of free and unfettered speech.
+
+When we analyse Bond’s role as spy, we notice, overall, a subtle shift in its form. Historically, the spy lived to champion and protect the state’s political interests by undermining those of opposing states that were often deemed hostile. This job was often portrayed to be glamorous, since the enemy (commonly Soviet Russia, or its Communist proxies) was well-defined, if not in terms of personality then in terms of ideology, and could be easily positioned in relation to the rightful Western ego. Bond’s killing of Dr. No prevents the latter from impeding the progress of an American space launch, thereby positioning one superpower over another. Since the majority of the audience hailed from America or the West, this would spark off feelings of solidarity among them and entrench in them a sense of unity, if not full-blown nationalism.
+
+Yet, over the years, as the Cold War came to a close and the presence of non-state actors became increasingly pronounced, the spy responded to this change in climate accordingly. Our increasingly globalised world came about with the recognition of diplomacy as a universal method of conflict resolution – most states have successfully adhered to this, with the exception of rogue non-governments and nuclear regimes (note: a nuclear regime is a nation with nuclear weapons whose nuclear legitimacy is called into question by the United States). In these cases, a more powerful and forceful method of warfare was required, necessitating the implementation of espionage due to its covertness.
+
+At face value, the spy appears to undermine the liberal, democratic order by his seeming position above the law – after all, is his “license to kill” not a privilege, accorded to one person, of dominion over many? The lack of accountability that accompanies every Bond film further mires the spy’s actions in paperwork, fictitious identities, and an unending legal nightmare, though charges are never really pressed. However, the law’s survival and continued legitimacy is contingent on the spy being able to preserve it. While the appearance of ordered diplomacy is transgressed by Bond shooting foreigners in the face, it is all done in the name of preventing some greater threat from transgressing and undermining the system instead, threats not unlike the ones posed by Chelsea Manning and Edward Snowden (in the case of Skyfall), or the more pertinent Islamic State (alluded to in Spectre, which, out of fear of transporting Bond from spy fantasy to sniper reality, does so through a secular organisation of white men in suits). This moral appeal to a larger cause has the perverse effect of reinforcing the negativity of Bond’s transgression by negating it, legitimising any subversion so long as it helps to protect the underlying logic and is thus willing to be contained within that logic. Henceforth, the framing of the villain has been radically altered, no longer to wage an imperialist crusade on the East, but to assert what has already been made possible by this crusade – the inescapability of Western democracy.
+
+Furthermore, the portrayal of villains in Bond films reflects our perception of real-life villains – states with rampant human rights abuses, disrespect for democratic norms, even idiosyncratic, un-Western beliefs and practices. As Bond’s enemies are increasingly subjected to more depraved characterisation – Jaws cuts steel with his teeth, Le Chiffre weeps blood, Oddjob is a midget who murders with his hat – our association with the Enemy is slowly reduced to a singular feeling of apprehension, disgust, incommensurability, as we struggle to comprehend how such characterisation is allowed to function alongside our sane, rational, and normal behaviour as human beings.
+
+![image1](../static/img/bond/img1.jpg)
+*What’s worse than a midget? A Korean midget who undermines international security!*
+
+Here, the use and manipulation of physical bodies creates a spectacle from which the audience is unable to resist the dominant, normalised Western ideology. As we invariably associate the villain with his deformities, we put a face to the unexplainable, incomprehensible violence that takes place outside the comfort of our liberal democracy, thereby linking phenomena contrary to democratic judgment to the villainous, mentally unsound archetypes of pure evil. This permits and accounts for the real-life interventions by leading superpowers in the affairs of their unruly, exotic, uncivilised rivals – did Die Another Day not presage the proliferation of Kim’s nuclear regime precisely through British interference with its own bilateral trade; has Casino Royale not, by its depiction of a sadistic Mads Mikkelsen, justified Bond’s betrayal of Vesper by labelling her instead as a traitor?
+
+As the changing nature of the Enemy – defined in reality by the hegemony-wielding U.S. – alters the precise function of the spy accordingly, it reflects, too, the changing dynamics of Western geopolitics. While America is still considered to be the world’s default superpower, most of its international decisions are made with reference to a consciousness outside the nation, namely that of globalism. This seems to lie at odds with another facet of the James Bond persona – his stature as national hero. How would we reconcile Bond’s significant presence as British spy on an international level?
+
+<br>
+
+### Bond: national or international actor?
+
+The secret to this lies in exploiting this duality (national hero, international spy; or rather, national spy, international hero) presented throughout every single Bond film. 007 has his origins as an MI6 agent indebted to serving his Government, but functions, over the years, more as a guarantor of international peace and security than as a protector of the British name. In The World Is Not Enough, the nuclear threat looms large inasmuch as Soviet Russia no longer existed by then; still, the outcome of saving the world while on a mission to protect a billionaire’s daughter testifies to the claim that the spy operates on both levels.
+
+
+
+On one hand, Bond is seen to be a figure for nationalism, being able to assert his nation’s brand (MI6, “double-o seven”) while performing the necessary role of global agent. On the other, Bond is the world’s hero, hailing as a mole from his home country. The later films tend to espouse this latter view. Regardless of which view ultimately triumphs, however, the very possibility of Bond as a national/nationalist figure amidst a largely global field of geopolitics offers an antidote to the increasingly alienating internationalism propounded by liberal democratic ideals. It is crucial that we note this effective containment of nationalism within globalism – Bond may be a metonym for British solidarity and bravery (against the backdrop of its waning imperialism), but still must work for, or at least respond to, the mechanisms of the global world.
+
+<br>
+
+### The bond with technology
+
+Finally, to complete this analysis of a historically contingent and swiftly changing Bond persona, the study of Bond’s technological prowess has to be undertaken. In both Dr. No and Spectre, Bond heavily exploits military-cum-luxury gadgets for his espionage. However, the former lacks the sophistication the latter possesses, most obviously due to the fact that one was made a good half-century after the other. But is this all that accounts for the disparity? It is tempting to see it as such – after all, the invention of CGI, as well as the commercialisation of 3D and IMAX technologies, accounts for most of the cinematographic progress in the Bond films. Nevertheless, there is a distinction in terms of the emphasis placed on the technologies showcased within the films.
+
+
+
+The earlier productions tended to establish Bond as a definitive cinema presence by rendering him the male fantasy of consumers – on top of his exploits with women, guns, and travelling around the world, gadgets helped to demonstrate his seemingly unlimited wealth and adeptness at using them. Piloting a one-man helicopter is a formidable task, as elucidated in Sean Connery’s You Only Live Twice. Nor is a spy-cam dog (A View to a Kill) easy or cheap to come by. The very presence of these contraptions aided the cementing of James Bond as an all-rounded masculinity well-equipped to the rapid innovation of the later 20th century.
+
+
+
+The later films still retain this, but are increasingly responsive to the digitalism that swept over the nineties and the dawn of the new millennium. To further entrench Bond as the fantasy of the capitalist regime, technology is essential; in its projecting of the consumer’s desires onto him, Bond is kept relevant. A more digitalised consciousness – shifting from computers to smartphones and now virtual reality coupled with artificial intelligence – would necessitate a mirror-image in the physical gadgets presented; a multi-touch table in Quantum of Solace looks no different from products available in the market a decade later. This ability to predict and influence market demand for various technologies enshrines the Bond persona in a cultural matrix, creating a personality cult bordering on mass obsession.
+
+
+
+Arguably, having an already sexualised and apotheosised spy-hero associated with the cutting-edge of technology not only reflects the ideology of consumerism, but also amplifies it. The equivocation of Bond, you and my spy and hero and male model, with the latest, most futuristic representations of technology enables the industry to easily garner ideological support for technological research and consumption. By equipping a car with submarine functions (The Spy Who Loved Me), a watch with lasers (GoldenEye) or magnetic saws (Live and Let Die), the Bond films are assured of their viewers’ ideological commitment to consumerism due to the excess of technological innovation, mostly unattainable to the average consumer. The message promoted by these implicit product placements is to buy the Omega watch that Daniel Craig used, if you want to be like him (i.e. a killing machine with abs and an unlimited budget). Even in more ludicrous gadgets such as the submarine car, the consumerist desire still lingers on, even more so in fact, perhaps due to the intangibility of the final good. The fantasising for the Lotus Espirit creates the strongest brand loyalty to the company, as is materialised when the release of Lotus’ latest model prompts a surge in sales, or at least a perpetual yearning for and hence submission to the thought of owning that model.
+
+![image2](../static/img/bond/img2.jpg)
+*Pleased to make your acquaintance. The name’s Quality. Premium Quality.*
+
+In short, we see that the role played by 007 as a master of technology is incredibly ideological, in its ability to construct a wholly idealised symbol of sexuality and power out of the spy figure, alongside its intensification and perpetuation of consumerist beliefs and practices by manufacturing the desire for and fixation with technological breakthroughs.
+
+
+
+Thus far, we have established James Bond as a defender of the predominantly internationalist and liberal agenda, insofar as he fights for them against the rogue Others, the odd and deformed villains seemingly devoid of emotion and morality, and always triumphs. Bond also entrenches the consumerism of capitalist ideology in and through the apparently untainted medium of culture. However, this seems to relegate the franchise to a reactionary role in which Bond merely responds to real-world policies and trends; Bond is liberal only because America won the Cold War; he is a techie because the world has moved past starvation and epidemics into the pursuit of technological advancement for its own sake. Such an interpretation clearly downplays the complicity of Bond in manufacturing many of these policies and trends, and lacks persuasion amidst the conditions of Bond’s production – mass-produced in studios for the purpose of establishing not only a brand, but a brand built into and building the very ideology of consumerism that makes possible the brand’s continued presence.
+
+<br>
+
+### Bond the playboy: gender politics
+
+For a convincing case, let us examine the final role that James Bond performs for his audience, that of the playboy. While the playboy appears to be a sex symbol for women, he, in actuality, always functions in terms of the male gaze, for the male gaze. This is because the sexual satisfaction of the Bond girl is never presented without reference to Bond’s desire-fulfilment; whenever the former is apparent, it is displayed through Bond’s ability to charm his way through any girl’s heart, regardless of context. When Pussy Galore is making love with Bond, is this not his violation and rape of her as he forces himself onto her in the barn? And her very “conversion” from staunch lesbian to straight lover, this cure; does it not reflect the irresistible charm and power that Bond holds over every women, straight or not? Galore’s acceptance, even enjoyment, of this sexist and perverse transgression seeks to exalt the Bond persona above his specific, once-off misconduct – akin to signaling to men that unconsented sex is permissible, so long as this sex allows consent to be manufactured by way of one’s adoption of this persona.
+
+
+
+When the girls are not being sexually exploited they are often just props to be saved for the sake of advancing the storyline. In Ian Fleming’s original novel The Spy Who Loved Me, we are told the story of Bond rescuing his damsel-in-distress, Vivienne Michel, from the clutches of her would-be rapists. This cements his reputation as a moral do-gooder, while allowing him rightful ownership of her – she is his to exploit. These props also are sidekicks, supplements of information crucial to the success of Bond’s spy missions – see Spectre’s Lucia Sciarra betraying her deceased husband by providing his enemy (Bond) with vital data. What literally displays the Bond girl as prop is her identity, for she is often accorded a suggestive name meant to arouse the appetites of men: Pussy Galore, Holly Goodhead, Xenia Onatopp; the list goes on.
+
+
+
+This phallocentric and sexist representation of the modern hero, the spy, the ideal male figure, appears to go against, or even undermine, the rising cultural awareness and appreciation of civil rights, of which the feminist struggle is a key part. The conception of James Bond in the 1950s coincided with the birth and spread of second-wave feminism, whose primary motivations include the liberalising of sexuality, reproductive rights, as well as the re-defining of family and work spaces. Bond, in stark comparison with feminism, thus looks to oppose all the latter stands for, rooting instead for a male-centric sexuality bent on pleasuring and circumscribing in power the male, a lack of reproductive rights (for to be woman is to bear Bond’s seed), and a tyrannical work space in which Bond is able to request for sexual favours in return for professional ones (as in Thunderball, where he gets away with rape by blackmailing Patricia Fearing).
+
+
+
+It therefore seems that the entire Bond saga works as an antidote, a return to the good old pre-feminism past, against the radicalism espoused by the loud-mouthed, pesky feminists of the sixties. The need for this antidote is ever more crucial when contextualised against the evolution of feminism, from a more peace-loving fight for suffrage and equality, to one which seems to interrogate and deconstruct the very (male) order underpinning society whole. A more charitable response to 007’s on-screen antics would be to show that these resemble more of a bulwark against the reactionary violence of the sixties by propagating a relatively traditionalist outlook on gender politics.
+
+![image3](../static/img/bond/img3.jpg)
+*Bond attempts re-entry behind Holly “Gives” Goodhead.*
+
+<br>
+
+### Dissecting Bond’s popularity - are we really immune to his prejudices?
+
+This reading of the Bond ego works on the surface, but becomes increasingly shallow and reductive as we note its failure to explain how the domination and pervasiveness of identity politics in Western society can complement this explicit sexism and misogyny. After all, why was James Bond so popular in the sixties amongst both radical and moderate feminists? Why is he still so popular with virtually the entire Western-buying population today, where identity politics has culminated in an over-theoretical quagmire unable to take anything without slamming it as sexist?
+
+
+
+The answer is simple. The best way to account for this problem is to entertain the possibility that the misogyny and phallocentrism of 007 are co-opted, appropriated by the very political ideology that appears to be at odds with it. This takes the previous interpretation one step further: Bond is more than a traditionalist take on gender emancipation; he provides the avenue for catharsis on which the legitimacy and continuation of gender emancipation is contingent, and contains the degree to which emancipation may take place, i.e. freedom within parameters. This is made possible because we – and this is an assumption – are aware of the divergence between Bond’s cinematic journey and our own real one. We know that having sex with multiple women at literally first sight while saving the world against the big bullies is an unrealistic thing. Having the women spoken for by Bond’s seduction techniques further adds to the injustice we do perceive against the feminist struggle. But we also know that this does not occur in real life – or so we like to think. With this deferral of our own prejudices and sexisms onto an external, culturally recognised character, we are allowed to flaunt and display the desires and fantasies we possess through the imagined playboy figure, but still repressing them in real life. Bond’s on-screen physique and actions are thus excused from serious scrutiny since they conform to a trope of unabashed masculinity, living out and realising our socially unacceptable fantasies on a universal plane of recognition.
+
+
+
+It is exactly within this distancing of James Bond from our very own lives that ideology constitutes us as its subjects. We think: Bond is a chauvinist, and because I know this I am hence not one. Or better still: Bond is the representation of my dreams and desires to screw women and be canonised for it; I know this, therefore I am aware of such authentic dreams and desires; I am free. The critical success of the first statement is easily explained by cynical distancing, since my awareness of an injustice seems to imply its sheer lack of association with me. The second illusion, more sophisticated, nonetheless falls prey to the mass-produced status of culture: all of us James Bonds are unfettered and may relish in the pleasures of chauvinism. This allows ideology – democratic feminism – to subsume us under its tentacles, rendering us docile subjects who obey the doctrine of gender political correctness on the grounds of our moral superiority, while giving us the room to guiltlessly indulge in our “perverse” fantasies on sex by having Bond do it for us on screen. Our feminist call to emancipate has also been successfully exploited and sidelined, because we, through our self-assured awareness, think we already are emancipated from a much deeper sexual hierarchy. Now, democracy and peace reign because anarchy and war are fought out by our valiant, self-sacrificing hero.
+
+
+
+We have seen that our principles of democracy and support for civil rights are not simply a product of a growing, richer, more enlightened awareness of the human condition, but are in part manufactured by cultural (and by definition, ideological) apparatuses such as the franchise of James Bond. Agent 007, as we affectionately address him as, is both the symptom and cause of the liberal international order we find ourselves positioned on today, seemingly as natural as the patriarchy was a century ago. Bond is no longer obsolete, even though he pretends to be such. The persistence of certain un-democratic features in his persona add on to the strength and legitimacy of democracy through an intricate subversion-containment complex, justifying any underlying ideological struggle between the West and its dissidents. We also may note how Bond’s legacy is one of a continuous production of ideological cues, seeking to limit truly democratic and feminist movements by situating them vis-à-vis an imagined freedom precisely due to his debauched ways.
+
+
+
+As the cultural critic Slavoj Žižek notes, our freedom isn’t really free; we “feel free because we lack the very language to articulate our unfreedom”. After a good fifty years, James Bond is still the language that counters our skepticism by presenting to us an ideological phenomenon which, through its capitalist myth, appears to be free from the clutches of ideology.
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <hr>
+    </div>
+    <section class="fdb-block pt-3 author-info">
+        <div class="container author-info">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-2"></div>
+                <div class="col-3 mt-4 mt-md-0 ml-auto mr-0 mr-md-0 author-container">
+                    <img alt="image" class="img-fluid author" src="../static/img/morris.jpg"/>
+                </div>
+                <div class="col-5">
+                    <p class="text-h3"><strong>Morris Yang</strong>&nbsp; &nbsp;&nbsp;<em>Writer</em></p>
+                    <small>
+                        Morris is a Junior College student who simply cannot stop thinking about what it means to think. (He says this not to posture himself intellectually.) Sit him down to discuss politics, or how we view and consume current affairs, or popular culture, or great literary works, or film, or philosophy, and he'll treat you to coffee. He also enjoys great music (right now it's his Spotify playlist, as will always be). The Timeless Compass, he thinks, provides a great opportunity to express his views and develop them in response to what his esteemed readers think.
+
+                        Contact: morrisycy@gmail.com
+                    </small>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
