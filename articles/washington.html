@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- <link rel="stylesheet" type="text/css" href="static/css/theme.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="static/css/custom.css" /> -->
+    <!-- Compass by Optimus Prime from the Noun Project -->
+    <link type="text/css" rel="stylesheet" href="../static/css/froala_blocks.css">
+    <!--<link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet"> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/js/try.js"></script>
+    <script type="text/javascript" src="../static/js/Markdown.Converter.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../static/css/fonts/fonts.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto+Light" rel="stylesheet">
+    <script>
+
+        $(document).ready(function() {
+            var txt = $("#markdown").html();
+            var converter = new Markdown.Converter();
+            var htmlContent = converter.makeHtml(txt);
+            $('#markdown').html(htmlContent);
+            console.log("Success");
+        })
+    </script>
+
+    <style>
+
+        body {
+            font-family: 'Open Sans Condensed';
+        }
+
+        .block {
+            height: 20rem;
+            font-size: 1.5em;
+            padding-left: 0;
+            padding-right: 0;
+            // position: relative;
+            color: white;
+        }
+
+        .block-text {
+            padding-left: 0.5em;
+            padding-right:0.5em;
+            bottom: 0em;
+            font-family: 'Open Sans Condensed';
+            // position: absolute;
+            color: black;
+            // background-color: rgba(0, 0, 0, 0.5);
+            height: 5em;
+            width: 100%;
+        }
+
+        .cover {
+            position: relative;
+            padding-left: 10rem;
+            padding-right: 10rem;
+            color: black;
+            margin-bottom: 1em;
+            background-color: white !important;
+        }
+
+        .cover-text {
+            bottom: 0em;
+            position: absolute;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 74.5%; /* magic number */
+            padding-left: 1em;
+            margin-left: 10rem;
+            margin-right: 10rem;
+            font-size: 2em;
+            height: 3em;
+        }
+
+        .dark-text {
+            color: #000;
+        }
+
+        .cover-img {
+            object-fit: cover;
+            width: 100%;
+            height: 30rem;
+            padding-left: 10rem;
+            padding-right: 10rem;
+        }
+
+        .block-img {
+            object-fit: cover;
+            width: 100%;
+            height: 60%;
+        }
+
+        .wrapper {
+            margin-top: 5.25rem; /* magic number, do something legit later */
+            bottom: 40%;
+        }
+
+        #big-circle-thing {
+            margin: auto;
+            margin-top: 5%;
+            height: 90%;
+            width: 90%;
+            border-radius: 100%;
+            background-color:#ffffff;
+            font-size: 3em;
+            padding-top: 35%;
+            color: #000000;
+            left: auto;
+            right: auto;
+        }
+
+        #circle-wrapper {
+            // margin-left: 0em;
+            max-height: 100%;
+            background: repeating-linear-gradient(
+                45deg,
+                #333,
+                #333 5px,
+                #222 5px,
+                #222 10px
+            );
+        }
+
+        #cent {
+            border-color: #000000;
+            border-left: 3px;
+            border-right: 3px;
+            color: black;
+            font-size: 2em;
+            border: 1px !important;
+        }
+
+        #about {
+            background: repeating-linear-gradient(
+                45deg,
+                #606dbc,
+                #606dbc 10px,
+                #465298 10px,
+                #465298 20px
+            );
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            background-color: ;
+            // border-radius: 0.5em;
+        }
+
+        .dropdown-menu-item {
+            margin-left: 1em;
+            margin-right: 1em;
+            margin-bottom: 1em;
+        }
+
+        .dropdown-menu-item a:hover {
+            text-decoration: none;
+        }
+
+        .dropdown a{
+            color: black !important;
+        }
+
+        .content-row {
+            padding-left: 10rem;
+            padding-right: 10rem;
+        }
+
+        .block-intro {
+            font-size: 1rem;
+        }
+
+        .header-custom {
+            margin-bottom: 1.5em;
+            font-size: 1.25em;
+            margin-top: 1.5em;
+        }
+
+        #navbarNav3 {
+            margin-right: 10rem;
+        }
+
+        #navbar-img {
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        .navbar-brand {
+            margin-left: 10rem;
+            left: 0;
+        }
+
+        .navbar {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        #navbar-container {
+            min-width: 100% !important;
+            padding-left: 0;
+            padding-right: 0;
+            display: block;
+        }
+
+        .col-fill-8 {
+            width: 66%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+        }
+
+        img + em{
+            font-size: 0.8em;
+            display: block;
+            text-align: center;
+        }
+
+        #markdown img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 70%;
+        }
+
+        .navbar-toggler i {
+            color: #EEEEEE;
+        }
+
+        .author {
+            height: 10em;
+        }
+
+        .author-container {
+            margin-right: 0;
+        }
+
+        .author-info {
+            border: 1em;
+            border-color: #999999;
+        }
+
+        #content {
+            margin-top: 55vh;
+            color: #FFFFFF;
+        }
+
+        #markdown {
+            margin-top: 2em;
+            font-family: "Roboto Light";
+            text-align: justify;
+        }
+
+        #markdown p {
+            text-align: justify;
+            font-size: 1.05rem;
+        }
+
+        #markdown p:first-child:first-letter {
+            float: left;
+            font-size: 3em;
+            margin-right: 0.25rem;
+            margin-top: 0.3rem;
+            font-family: "Libre Baskerville";
+        }
+
+        h1 {
+            font-family: "Libre Baskerville";
+        }
+        h2 {
+            font-family: "Libre Baskerville";
+        }
+        h3 {
+            font-family: "Libre Baskerville";
+        }
+        h4 {
+            font-family: "Libre Baskerville";
+        }
+        h5 {
+            font-family: "Libre Baskerville";
+        }
+        h6 {
+            font-family: "Libre Baskerville";
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header-custom">
+        <div class="container" id="navbar-container">
+            <nav class="navbar navbar-expand-md">
+                <a class="navbar-brand" href="#">
+                    <img src="../static/img/logo_black.png" height="30" alt="The Timeless Compass" id="navbar-img">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav3" aria-controls="navbarNav3" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav3">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><strong>Home</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><strong>About</strong></a>
+                        </li>
+                    </ul>
+                    <div class="dropdown">
+                        <a id="categories" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"><strong>Categories</strong></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-menu-item">
+                                <a href="#">Politics and Current Affairs</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="#">Lifestyle</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="#">Pop Culture</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="#">Literature and Philosophy</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="#">Regions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 pl-0 pr-0 cover">
+                <img alt="image" class="img-fluid cover-img mt-1" src="../static/img/washington/cover.jpg">
+                <div class="cover-text">
+                    George Washington: Are His Monuments Untouchable?
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col col-md-8 text-left" id="markdown">
+
+Every Fourth of July, Americans of all race, creed, and religion come
+together to celebrate the independence of America, as well as the heroic
+struggles and sacrifices of the American Revolutionaries, especially the
+Commander-in-chief, George Washington.
+
+George Washington is perhaps one of the most revered historical figures
+in the world. There are memorials and statues commemorating the Founding
+Father all across the United States. Furthermore, there are artworks,
+poems, novels, films, buildings, and even universities created in his
+memory.
+
+Granted, almost every nation, especially those which became independent
+from an external ruler, celebrates their founding father. Founding
+Fathers are an integral aspect of the nation’s historical narrative as a
+sovereign state, not to mention it gives the people a personality to
+look up to. For instance, Haiti remembers its revolutionary hero
+Toussaint Louverture by printing his image on its currency; Cuba has
+erected multiple statues and busts of its National Hero José Martí – in
+fact, his birthplace, 41 Paula Street in Old Havana, is now a museum
+dedicated to Martí and his contribution towards Cuban independence.
+Indeed, more often than not, National Heroes tend to get immortalised
+and mythologised as their lives become the source of national history
+and pride. However, the extent to which America pays tribute to hers is
+certainly unparalleled.
+
+While it is a common practice to commemorate a national hero, it is
+definitely uncommon to elevate the hero to the likeness of Roman
+Emperors or Greek Gods. *George Washington* (1840) by Horatio Greenough
+exemplifies this. The tall marble sculpture was based on the legendary
+*Statue of Zeus at Olympia*, and depicts Washington in a godlike pose.
+Another example is *The Apotheosis of Washington* (1865) by Constantino
+Brumidi, a massive ceiling mural in the U.S Congress building. In this
+scene, Washington is seated at the centre of the heavens, donned in the
+royal colour purple, and surrounded by Roman gods and goddesses.
+
+![](../static/img/washington/image.png)
+*Left: Image of the George Washington (1840) by Horatio Greenough, now
+owned by the Smithsonian Museum
+Right: Image of The Apotheosis of Washington (1865) by Constantino
+Brumidi, at the United States Congress building*
+
+The possible implications of these artworks are potentially unsettling:
+Washington had transcended humanity in these depictions, and is thus
+viewed as a godly hero to be revered by mortal Americans. One could even
+say that this is worryingly akin to how many dictators around the world
+glorify themselves in their cult of personality. However, monuments of
+George Washington have never come under the re-evaluation of historians
+nor the critical scrutiny of the public. For that matter, nobody really
+seems to mind such tributes made to Washington – but why?
+
+Before we can answer this question, it would be best to explore the
+purpose of monuments, and why they get preserved.
+
+Monuments are symbolic structures, often meant to commemorate a person
+or an event due to some sort of the significance that they pose.
+Critically, the longevity of a monument depends entirely on what it
+signifies. For instance, think of why citizens liberated from an
+authoritarian regime might tear down a statue of their former ruler.
+Despite the fact that the statute could be repurposed as a historical
+relic, they do so to get rid of the reminders of a system that they were
+victimised by and, consequently, despise. On the other hand, monuments
+that celebrate a legendary hero, for instance, tend to be preserved,
+because they are the reminder of a particular segment of historical past
+that the people wish to parade and celebrate. In other words, the
+citizenry may choose to preserve or take down monuments based on whether
+the monument represent the part of their history they wish to be
+represented or be rid of, respectively.
+
+Thus, the key to the question on whether George Washington’s monuments
+are problematic or not is to first understand what they represent. The
+artworks and structures still stand as legitimate monuments due to the
+following reasons:
+
+Firstly, monuments of George Washington commemorate not only the
+individual, but also the quintessential values of America. Almost every
+monument dedicated to a person applauds his or her achievements, and
+George Washington is no exception. Washington is remembered for his
+contributions to creating a system of democracy, freedom, and liberty in
+America, which are the very cornerstones on which the nation is built.
+Thus, we may look over the potentially controversial imagery – such as
+their propensity to overly venerate – that these monuments employ.
+
+Having said that, let us take another look at Greenough’s sculpture. The
+engravings on the sculpture are written in Latin, which translate to:
+“Horatio Greenough made this image as a great example of freedom, which
+will not survive without freedom itself”. Art Historians of Smithsonian
+Institute interpret the engraving as such: in conceptualising this
+sculpture, Greenough decided that Washington would be portrayed as a
+symbolic representation of liberty itself, which might explain the
+seemingly cryptic message that describes the statue of Washington as an
+“example of freedom”. Another important detail of the sculpture is how
+Washington is offering the ownership of the sword that he is holding to
+the Americans appreciating the statue, which symbolises his achievement
+of empowering the American people with democracy and autonomy. In other
+words, the statue was constructed to ultimately celebrate the American
+value of freedom, and the image of George Washington was a medium to
+convey this message. Therefore, George Washington as a representation of
+American values appears to outweigh any objections to the apotheosis of
+him as an individual.
+
+Thirdly, with regards to the seemingly problematic decision to portray
+Washington in the likeness of Zeus, Art Historians explain that it was
+meant to be a reference to Greek culture. As Greece was considered the
+origin of Western democracy, it was common for many Western artists
+during the early 19th century to adopt Greek art styles and imagery in
+works that celebrated democracy. Hence, in retrospect, we realise that
+our previous concerns with regards to Washington’s apotheosis were
+merely a misunderstanding based on our immediate reactions to the
+artworks, as we failed to understand the historic meaning and symbolic
+nature of these imagery and styles that were adopted in depicting
+Washington.
+
+Thirdly, Washington’s monuments are not as politically problematic as
+they were posthumously constructed in retrospect, rather than to
+reinforce an existing political regime. Sometimes, dictators build
+monuments of themselves as part of their cunning scheme of constructing
+a cult of personality so that they may eventually harness absolute
+political support from the masses. For instance, Turkmenistan’s dictator
+President Gurbangly Berdymukhamedov made news when he built a 69-foot
+golden statue to commemorate himself. Such monuments became a political
+tool to spread propaganda and aid the rule of despots, which would
+inevitably be associated with the despicable actions of the regimes in
+the future. In the case of Washington, however, most of his monuments
+were built centuries after his death, with full approval from both the
+Democrats and Republicans, and the general public. Therefore, monuments
+of Washington do not entail political bias or interests, and thus lack
+reason for them to be politically condemned.
+
+Lastly, unlike many megalomaniac or tyrannical leaders, George
+Washington’s legacy is deemed worthy of celebration and thus
+preservation by the American citizenry. This is perhaps attributed to
+the fact that Washington had to be convinced into accepting his
+Presidency, despite the fact that he had earned the unanimous vote of
+the electoral college and the unwavering support of the American public.
+Additionally, when he stepped down from Presidency in 1797, it was not
+due to any political pressure or scandal – he had genuinely volunteered
+to surrender his power. Hence, George Washington was a modest character
+who did not allow corruption or the desire for power to affect his work
+as a statesman. As a result, monuments dedicated to Washington are not
+the reminders of an oppressive leadership, but rather a reminder of a
+leader who was genuinely deserving of commemoration.
+
+This is not to negate the problematic aspects that monuments of George
+Washington entail. Indeed, celebrating a person means that we celebrate
+the whole person, meaning we inadvertently celebrate the terrible deeds
+the person has done as much as his or her commendable achievements. For
+instance, George Washington was a slave owner himself, coming from a
+family that built its wealth on tobacco plantations and slavery.
+Granted, he limited American involvement in the Atlantic slave trade,
+and was the only Founding Father to arrange the liberation of his slaves
+on his own volition, but he still partook in many of the abusive
+practices – such as whipping, caning, and beating – that were customary
+during this period. Moreover, the constructions of many of the monuments
+that were built in the earlier 19th century, such as the *Washington
+Monument* in Washington D.C, relied on slave labour. Yet, many of these
+unsettling, but unfortunately undeniable facts are overlooked when
+appreciating George Washington monuments.
+
+Personally, I am in no position of expertise or qualification to judge
+George Washington, or to conclude whether America should or need not be
+disturbed by Washington’s monuments. I cannot weigh his contributions in
+spearheading American independence in contrast to his personal life as a
+slave owner, as this results in a terrible dilemma: To argue that
+Washington’s contributions as a National Hero outweigh everything else
+would be to dismiss the unimaginable plight and misery of the slaves;
+yet to argue that his cruel treatment of the slaves outweighs everything
+else would be disregarding his unequivocal contributions in bringing
+democracy and freedom to America.
+
+Instead, what I can attempt to do is to point out the fact that
+Americans seem to be struggling with this question too. Americans are
+indeed aware of the “dark secrets” of George Washington, yet little to
+no voices call for the Washington Monument to be taken down. Perhaps,
+the very title of “Founding National Hero” elevates the person in
+question to the ranks of an untouchable superman, who is immune to
+historical revisions. Alternatively, people may have simply accepted
+George Washington’s misdeeds as an unfortunate result of customary
+practices during this period in history. In any case, as much as
+Americans are aware of the moral imperfections of their Founding Father,
+they are not as willing to point it out.
+
+Nonetheless, it seems that George Washington will continue to be
+remembered as the founding President and national hero of United States
+of America. Perhaps some new movement will emerge in the future that
+will challenge even George Washington’s legacy. However, at this current
+stage, monuments dedicated to George Washington have continued to
+withstand the test of time, and will likely continue to be part of
+American heritage and architecture for decades to come.
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <hr>
+    </div>
+    <section class="fdb-block pt-3 author-info">
+        <div class="container author-info">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-2"></div>
+                <div class="col-3 mt-4 mt-md-0 ml-auto mr-0 mr-md-0 author-container">
+                    <img alt="image" class="img-fluid author" src="../static/img/morris.jpg"/>
+                </div>
+                <div class="col-5">
+                    <p class="text-h3"><strong>Morris Yang</strong>&nbsp; &nbsp;&nbsp;<em>Writer</em></p>
+                    <small>
+                        Morris is a Junior College student who simply cannot stop thinking about what it means to think. (He says this not to posture himself intellectually.) Sit him down to discuss politics, or how we view and consume current affairs, or popular culture, or great literary works, or film, or philosophy, and he'll treat you to coffee. He also enjoys great music (right now it's his Spotify playlist, as will always be). The Timeless Compass, he thinks, provides a great opportunity to express his views and develop them in response to what his esteemed readers think.
+
+                        Contact: morrisycy@gmail.com
+                    </small>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- <link rel="stylesheet" type="text/css" href="static/css/theme.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="static/css/custom.css" /> -->
+    <!-- Compass by Optimus Prime from the Noun Project -->
+    <link type="text/css" rel="stylesheet" href="../static/css/froala_blocks.css">
+    <!--<link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet"> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/js/try.js"></script>
+    <script type="text/javascript" src="../static/js/Markdown.Converter.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../static/css/fonts/fonts.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto+Light" rel="stylesheet">
+    <script>
+
+        $(document).ready(function() {
+            var txt = $("#markdown").html();
+            var converter = new Markdown.Converter();
+            var htmlContent = converter.makeHtml(txt);
+            $('#markdown').html(htmlContent);
+            console.log("Success");
+        })
+    </script>
+
+    <style>
+
+        body {
+            font-family: 'Open Sans Condensed';
+        }
+
+        .block {
+            height: 20rem;
+            font-size: 1.5em;
+            padding-left: 0;
+            padding-right: 0;
+            // position: relative;
+            color: white;
+        }
+
+        .block-text {
+            padding-left: 0.5em;
+            padding-right:0.5em;
+            bottom: 0em;
+            font-family: 'Open Sans Condensed';
+            // position: absolute;
+            color: black;
+            // background-color: rgba(0, 0, 0, 0.5);
+            height: 5em;
+            width: 100%;
+        }
+
+        .cover {
+            position: relative;
+            padding-left: 10rem;
+            padding-right: 10rem;
+            color: black;
+            margin-bottom: 1em;
+            background-color: white !important;
+        }
+
+        .cover-text {
+            bottom: 0em;
+            position: absolute;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 74.5%; /* magic number */
+            padding-left: 1em;
+            margin-left: 10rem;
+            margin-right: 10rem;
+            font-size: 2em;
+            height: 3em;
+        }
+
+        .dark-text {
+            color: #000;
+        }
+
+        .cover-img {
+            object-fit: cover;
+            width: 100%;
+            height: 30rem;
+            padding-left: 10rem;
+            padding-right: 10rem;
+        }
+
+        .block-img {
+            object-fit: cover;
+            width: 100%;
+            height: 60%;
+        }
+
+        .wrapper {
+            margin-top: 5.25rem; /* magic number, do something legit later */
+            bottom: 40%;
+        }
+
+        #big-circle-thing {
+            margin: auto;
+            margin-top: 5%;
+            height: 90%;
+            width: 90%;
+            border-radius: 100%;
+            background-color:#ffffff;
+            font-size: 3em;
+            padding-top: 35%;
+            color: #000000;
+            left: auto;
+            right: auto;
+        }
+
+        #circle-wrapper {
+            // margin-left: 0em;
+            max-height: 100%;
+            background: repeating-linear-gradient(
+                45deg,
+                #333,
+                #333 5px,
+                #222 5px,
+                #222 10px
+            );
+        }
+
+        #cent {
+            border-color: #000000;
+            border-left: 3px;
+            border-right: 3px;
+            color: black;
+            font-size: 2em;
+            border: 1px !important;
+        }
+
+        #about {
+            background: repeating-linear-gradient(
+                45deg,
+                #606dbc,
+                #606dbc 10px,
+                #465298 10px,
+                #465298 20px
+            );
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            background-color: ;
+            // border-radius: 0.5em;
+        }
+
+        .dropdown-menu-item {
+            margin-left: 1em;
+            margin-right: 1em;
+            margin-bottom: 1em;
+        }
+
+        .dropdown-menu-item a:hover {
+            text-decoration: none;
+        }
+
+        .dropdown a{
+            color: black !important;
+        }
+
+        .content-row {
+            padding-left: 10rem;
+            padding-right: 10rem;
+        }
+
+        .block-intro {
+            font-size: 1rem;
+        }
+
+        .header-custom {
+            margin-bottom: 1.5em;
+            font-size: 1.25em;
+            margin-top: 1.5em;
+        }
+
+        #navbarNav3 {
+            margin-right: 10rem;
+        }
+
+        #navbar-img {
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        .navbar-brand {
+            margin-left: 10rem;
+            left: 0;
+        }
+
+        .navbar {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        #navbar-container {
+            min-width: 100% !important;
+            padding-left: 0;
+            padding-right: 0;
+            display: block;
+        }
+
+        .col-fill-8 {
+            width: 66%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+        }
+
+        img + em{
+            font-size: 0.8em;
+            display: block;
+            text-align: center;
+        }
+
+        #markdown img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 70%;
+        }
+
+        .navbar-toggler i {
+            color: #EEEEEE;
+        }
+
+        .author {
+            height: 10em;
+        }
+
+        .author-container {
+            margin-right: 0;
+        }
+
+        .author-info {
+            border: 1em;
+            border-color: #999999;
+        }
+
+        #content {
+            margin-top: 55vh;
+            color: #FFFFFF;
+        }
+
+        #markdown {
+            margin-top: 2em;
+            font-family: "Roboto Light";
+            text-align: justify;
+        }
+
+        #markdown p {
+            text-align: justify;
+            font-size: 1.05rem;
+        }
+
+        #markdown p:first-child:first-letter {
+            float: left;
+            font-size: 3em;
+            margin-right: 0.25rem;
+            margin-top: 0.3rem;
+            font-family: "Libre Baskerville";
+        }
+
+        h1 {
+            font-family: "Libre Baskerville";
+        }
+        h2 {
+            font-family: "Libre Baskerville";
+        }
+        h3 {
+            font-family: "Libre Baskerville";
+        }
+        h4 {
+            font-family: "Libre Baskerville";
+        }
+        h5 {
+            font-family: "Libre Baskerville";
+        }
+        h6 {
+            font-family: "Libre Baskerville";
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header-custom">
+        <div class="container" id="navbar-container">
+            <nav class="navbar navbar-expand-md">
+                <a class="navbar-brand" href="#">
+                    <img src="../static/img/logo_black.png" height="30" alt="The Timeless Compass" id="navbar-img">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav3" aria-controls="navbarNav3" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav3">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><strong>Home</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><strong>About</strong></a>
+                        </li>
+                    </ul>
+                    <div class="dropdown">
+                        <a id="categories" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"><strong>Categories</strong></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-menu-item">
+                                <a href="#">Politics and Current Affairs</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="#">Lifestyle</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="#">Pop Culture</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="#">Literature and Philosophy</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="#">Regions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 pl-0 pr-0 cover">
+                <img alt="image" class="img-fluid cover-img mt-1" src="../static/img/article_1_alt.jpg">
+                <div class="cover-text">
+                    Lit, Woke and Mug: The Etymology of Popular Slang Terms Today
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col col-md-8 text-left" id="markdown">
+
+*Lit AF* – just one example of today’s new slang, also coined
+cyber-slang or netspeak (due to it being primarily used on social
+media), that has infiltrated our vocabulary. From daily conversation to
+communication via social media, these terms have popped up, seemingly
+out of nowhere. Their frequent usage allows them to embed themselves and
+their meanings into our lives, becoming conventional terms used by our
+generation, and giving a new measure for what it means to be literate.
+However, apart from a quick search on the trusty Urban Dictionary to
+understand the meaning of these new slang terms, most of their origins
+remain mostly unknown. So, if you’ve ever wondered how these slang terms
+came to be, here is a lowdown on the rich histories of three popular
+slang terms used today.
+
+<br>
+
+####Lit
+
+Derived from the word english word “light”, *lit* has its roots in
+Dutch, German, and other Germanic languages. Besides its more well-known
+(and earliest recorded) meaning of providing light, *lit* also means to
+cause something to start burning or to discover something. However, in
+the early 1900s, a slang term for *lit* had developed, suggesting *lit*
+to mean intoxication, more specifically through alcohol, as seen through
+publications of the period.
+
+
+![](../static/img/slangs/media/quote1.png)
+*According to the Oxford English Dictionary which cited 1914’s
+publication of Choice Slang , “lit” has had the meaning of drunk or
+intoxicated since the 1900s.*
+
+![](../static/img/slangs/media/quote2.png)
+*Unlikely heroine Ida Arnold from Graham Greene’s famous 1938 novel
+Brighton Rock explains slightly wistfully, “If I hadn’t been a bit lit
+this wouldn’t have happened.”*
+
+As time passed, *intoxication* also began to acquire a wider scope of
+meaning, which in turn led to the widening of *lit*’s scope of meaning
+to also include the effects of drugs in addition to the effects of
+alcohol by the early 1970s.
+
+E. E. Landy’s 1971 *Underground Dictionary* defined “lit up” as “under
+the influence of a narcotic.”
+
+While currently, *lit* is still used to describe intoxication through
+drugs and alcohol, it’s meaning has also further widened to include
+excitement in general. Though rappers have played a part in giving this
+fresh new meaning to the term (through the general description of
+parties being *lit*, referring to the drunken atmosphere, and the
+resulting excitement in the air), a large part of this new 21st century
+meaning to *lit* has been cemented through its extremely frequent
+appearance on Twitter, becoming a popular hashtag to describe excitement
+in general.
+
+![](../static/img/slangs/media/image6.png)
+
+In the song, the rapper talks about getting intoxicated through drugs;
+however, he also talks about his excitement for the good times and the
+people he's excited to have those good times with, making it clear that
+his girls and friends are just as *lit* as Cannabis.
+
+![](../static/img/slangs/media/image14.png)
+
+Tweets today using the hashtag *\#lit* to describe excitement in general
+
+Thus, today’s popular slang definition of *lit* has come to mean
+excitement in a general sense, as well as a broader meaning of something
+along the lines of excellent.
+
+<br>
+
+#### Woke/Stay Woke
+
+Today, while the meaning of *woke* still remains as the past tense of
+wake (a word that sprung from Dutch, German and other Germanic languages
+with the general meaning of gaining consciousness), *woke* has also
+become teen internet slang for “a state of awareness in current
+political affairs”. Similarly to *lit*, *woke* had also seemed to become
+popularised through social media sites such as Twitter and Instagram,
+with the trending hashtag *\#staywoke* appearing on more than 128,000
+posts. Not only has it been used ironically and jokingly, but
+\#*staywoke* has also been used to urge people to be aware of a plethora
+of social and political affairs, such as racism, feminism, and other
+issues.
+
+A selection of posts on Twitter depicting how the usage of \#*staywoke*
+ranges from urging people to stay aware issues such as feminism and
+racism, to discovering the art and beauty of a method of semi-permanent
+hair removal.
+
+However, while MTV declared *woke* a new slang term for 2016, history
+has proven this to be incorrect, bringing its rich political history to
+light. The earliest recorded instance of *woke* actually occurred on 20
+May 1962, appearing in an article on white beatniks appropriating black
+culture in the New York Times.
+
+![](../static/img/slangs/media/image17.png)
+
+Titled “If You’re Woke, You Dig It” by African-American novelist William
+Melvin Kelley, the NY Times magazine published a piece on white beatniks
+appropriating black culture on 20 May 1962. The article also included a
+cartoon depicting the appropriation of such African-American Vernacular
+English (AAVE) by the younger white people.
+
+For the next few decades, the term continued to appear, with evidence of
+it being used in a more explicit political context. In a 1972 play
+entitled *Garvey Lives!*, author Barry Beckham writes, “I been sleeping
+all my life. And now that Mr. Garvey done woke me up, I’m gon stay woke.
+And I’m gon help him wake up other black folk.” This depicted Strong’s
+realisation of how he had been politically unaware of the lack of
+African American empowerment until Mr Garvey raised his aware on this
+issue, and his determination to continue to stay aware and spread this
+newfound awareness thus urged him to “stay woke”. These examples, among
+others, provide evidence that *woke* had originally held a solely
+pro-black political meaning.
+
+However, the term had mostly stayed dormant, until its feature in
+[Erykah Badu](http://fusion.net/story/252567/stay-woke/) 2008 song
+*Master Teacher*.
+
+![](../static/img/slangs/media/image10.png)
+
+In her 2008 song *Master Teacher*, Badu, along with Bilal and Georgia
+Anne Muldrow, sang about how they dream of racial equality, but still
+“*stay woke*” as they understand their dream is far from reality.
+
+While Badu’s song was considered the first major usage of the phrase
+“*stay woke*”, most people had simply brushed off the phrase in 2008,
+with some even claiming it to be just another case of improper grammar.
+Even in the years following the release of the song, the phrase stayed
+out of the spotlight, only to come back full-force with the 2012 Black
+Lives Matter movement.
+
+Public outrage which engendered the Black Lives Matter movement was
+first sparked when the criminal court in Florida decided not to convict
+George Zimmerman. With the reveal of the case to the public, protests
+soon followed, which blew up over social media in the form of the
+hashtag, *\#blacklivesmatter* and most importantly, *\#staywoke*. The
+hashtag *\#staywoke* became a significant term to the African American
+community, serving as a neatly packaged term to bring support to each
+other in these trying times, a way to remind each other to stay strong
+and put up a united front in the face of such injustice. The two terms,
+*\#staywoke* and *\#blacklivesmatter,* worked hand in hand as a powerful
+force used by thousands of Twitter users to uncover the stories of more
+black lives that had been lost due to racism in America, the phenomenon
+known today as the 2012 Black Lives Matter movement.
+
+![](../static/img/slangs/media/image20.png)
+
+On February 26, 2012, George Zimmerman shot and killed Trayvon Martin.
+Zimmerman was initially charged with second-degree murder, and
+subsequently was found not guilty.
+
+In the same year as the 2012 Black Lives Matter movement, Badu’s Russian
+rock group, Pussy Riot, was threatened with jail time for staging a
+sexually-charged queer protest performance. Badu responded by taking to
+Twitter to urge her followers to \#*staywoke,* which was the first known
+use of *\#staywoke* being used outside of its solely race-related
+political awareness.
+
+![](../static/img/slangs/media/image12.png)
+
+Thus, the combination of these events ultimately led to Twitter users
+posting tweets using the *\#staywoke* hashtag to urge others to remain
+aware of these social issues. This allowed *woke* to acquire a new
+meaning, where it served as not only a call for awareness on racism, but
+other issues as well, thus becoming the iconic slang term that it is
+today. While this term served alongside *\#blacklivesmatter* as a
+rallying cry for the modern civil rights movement, it slowly began to
+transform into a meme.
+
+![](../static/img/slangs/media/image11.png)
+*An example of the memeification of the phrase stay woke *
+
+While the idea of *stay woke* being a cry for awareness continued to
+remain intact, its newly developed meaning gave room for people to
+attach the term to ridiculous things, such as calling awareness to the
+obvious or trivial, as seen in the example above. While using the
+hashtag jokingly seems like harmless fun, the irony of its use may come
+across as a derogatory jab to its origins, resulting in discontent from
+its original community. Like many other slang terms adapted from the
+African American Vernacular English (AAVE), it was only a matter of time
+before *woke* became a mainstream term. However, being a word that had
+once served as a legitimate rallying force for black people to remind
+one another to be conscious of their struggles, the “loss” of this term
+to mainstream culture was a painful blow to the African American
+community. From the writers of The New York Times and The Boston Globe
+lashing out at this “cultural appropriation”, to the African American
+community having discussions on Twitter about how deeply racism is woven
+into American society, there was a sense of loss that came with the
+mockery of the slang term when its original meaning and symbolism made a
+descent into the meme territory.
+
+Personally, while I do believe English is a living and breathing
+language where it is the norm for words and their meanings to constantly
+change and adapt depending on its audience, I find myself torn with
+regards to this particular case. With people everywhere posting videos
+of themselves “twerking” or claiming to be “on fleek” with their “baes”,
+the appropriation of AAVE as mainstream terms is nothing new or
+surprising anymore. However, unlike the previous terms adapted into
+mainstream culture, *stay woke* carries a certain weight in the black
+community due to its origins. While the words do not mean much to people
+outside of the black community, to African Americans, they mean things
+like staying safe, and being aware of police brutality and white
+supremacy. The words are a neat little package to bring support and
+awareness to fellow African Americans in brutal times. Thus, to see such
+powerful words used in trivial and meaningless situations does seem like
+a degradation of sorts, a mockery of the strong rallying force it is
+supposed to represent. While its pro-black meaning will never truly be
+felt and embodied by the people outside of the black community, perhaps
+for one outside of the black community to be truly *woke*, one must
+first understand how the term had roused in the first place before being
+able to identify with it or use it.
+
+#### Mug / Mugger
+
+Lastly, here’s a word that is special that many Singaporeans use –
+*mug*. Singlish (Singapore English), being a relatively young and new
+variation of English, lacks the depth of research and variety of
+concrete evidence compared to other older variations of English.
+However, this does not mean that the history of Singlish is not just as
+interesting. A term well known to many Singaporeans, *mug* means to
+study by rote. Thus, a *mugger* refers to a hardworking student who
+memorises notes and regurgitates them during exams. Additionally, in the
+Singaporean context, the term seems to hold a slightly derogatory
+meaning, as it hints at the student being one to rush things at the last
+minute and also being able to regurgitate information, instead of
+processing and actively thinking.
+
+If we trace back the history of the term, we would find that the first
+recorded usage of *mug* with a similar meaning to today’s Singlish *mug*
+was in an 1800s British Magazine. This is not much of a surprise,
+considering Singapore was under the British rule for over a hundred
+years. This, as well as other British publications, had established
+*mug* to also have the meaning of studying or learning in a concentrated
+manner.
+
+![](../static/img/slangs/media/image18.png)
+
+[*The King's College
+Magazine*](http://books.google.co.uk/books?id=tW4EAAAAQAAJ&pg=PA235&dq=mugging&hl=en&sa=X&ei=e_oBU53TLKye4wTF-4GQBA&redir_esc=y#v=onepage&q=mugging&f=false)
+of November 1841 (p.235, "Our School Days" by C.H.H.) was the first
+recorded usage of *mug*, which meant to read or study in a concentrated
+manner.
+
+![](../static/img/slangs/media/image15.png)
+
+*Mug*, in the early 1800s, meant to learn (a subject, book etc.) by hard
+or concentrated study, as seen in 1856 [*Aldershottana:
+Or, Chinks in my hut*](http://books.google.co.uk/books?id=HLQBAAAAQAAJ&pg=PA23&dq=%22mugging%20up%22%20%20%20OR%20%22mugged%20up%22&hl=en&sa=X&ei=BAcCU8acEszo4QSb6oGgDQ&redir_esc=y#v=onepage&q=%22mugging%20up%22%20%20OR%20%22mugged%20up%22&f=false)
+
+This usage of *mug*, however, was considered a slang term of the 1800s,
+and thus had many different interpretations of how it came to be. The
+interpretations mainly split into two wings – one wing believed that the
+slang originated from one of the term’s original meanings, while the
+other wing believed that it was derived from other informal (slang)
+meanings of *mug.* The first wing believed that the slang term had
+originated from its original meaning of “cup”, as one would usually have
+a mug of coffee or tea while studying in order to keep themselves awake,
+or its other meaning of robbing someone, as one would be robbed
+(“mugged”) of sleep or rest. The second wing believed that the slang
+term had actually emerged from the other informal (or slang) meanings of
+mug. For instance, a slang meaning of mug is a stupid person, and thus
+one needed to *mug up* in order to be less of a mug. Another slang
+meaning of “mug” is a person’s face, and thus, many believed that one’s
+“mug” came very close to the books when studying intensely, thereby
+dubbing this act as *mugging*. However, due to the uncertain origins of
+this slang term, one can interpret how it came about in whichever way
+they see fit.
+
+All in all, the addition of cyber-slang into modern-day vocabulary has
+not only provided many new meanings to several words, but also changed
+the idea of what it means to be literate. Apart from being able to read,
+write, and understand the traditional meanings of words, one must now
+also be able to understand the new slang meanings and differentiate them
+from their traditional meanings to be considered literate. While many
+have criticised our “new” slang terms for being a corruption of the
+English Language, English, being a humble West Germanic Language and
+adapting many of its terms from other languages such as Latin, Greek,
+and German, could also be seen as a corruption of other languages. Thus,
+these slang terms can be seen as the mark that our generation leaves on
+the ubiquitous English language, similar to what the generations before
+us have done.
+
+Whether or not the words’ meanings are as politically charged as *stay
+woke* or as uncertain as *mug*, they all reveal the ever changing nature
+of the English language, and how new meanings are born again and again,
+giving old words a way to live through new generations, whilst carrying
+the weight of its original meanings that will eventually be discovered
+by the next in line.
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <hr>
+    </div>
+    <section class="fdb-block pt-3 author-info">
+        <div class="container author-info">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-2"></div>
+                <div class="col-3 mt-4 mt-md-0 ml-auto mr-0 mr-md-0 author-container">
+                    <img alt="image" class="img-fluid author" src="../static/img/natasha.jpg"/>
+                </div>
+                <div class="col-5">
+                    <p class="text-h3"><strong>Natasha Chew</strong>&nbsp; &nbsp;&nbsp;<em>Writer</em></p>
+                    <small>
+                        Natasha is a 16 year old Philipino-Chinese Canadian writer residing in Singapore. Her interests include the arts, language, psychology and the human condition. She enjoys writing creative and analytical pieces and reading in her spare time. She is interested in being a writer for The Timeless Compass to broaden her experience in writing and hopefully learn new skills from this experience.
+
+                        Contact: shebster.nat@gmail.com
+                    </small>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

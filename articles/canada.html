@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- <link rel="stylesheet" type="text/css" href="static/css/theme.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="static/css/custom.css" /> -->
+    <!-- Compass by Optimus Prime from the Noun Project -->
+    <link type="text/css" rel="stylesheet" href="../static/css/froala_blocks.css">
+    <!--<link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet"> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/js/try.js"></script>
+    <script type="text/javascript" src="../static/js/Markdown.Converter.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../static/css/fonts/fonts.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto+Light" rel="stylesheet">
+    <script>
+
+        $(document).ready(function() {
+            var txt = $("#markdown").html();
+            var converter = new Markdown.Converter();
+            var htmlContent = converter.makeHtml(txt);
+            $('#markdown').html(htmlContent);
+            console.log("Success");
+        })
+    </script>
+
+    <style>
+
+        body {
+            font-family: 'Open Sans Condensed';
+        }
+
+        .block {
+            height: 20rem;
+            font-size: 1.5em;
+            padding-left: 0;
+            padding-right: 0;
+            // position: relative;
+            color: white;
+        }
+
+        .block-text {
+            padding-left: 0.5em;
+            padding-right:0.5em;
+            bottom: 0em;
+            font-family: 'Open Sans Condensed';
+            // position: absolute;
+            color: black;
+            // background-color: rgba(0, 0, 0, 0.5);
+            height: 5em;
+            width: 100%;
+        }
+
+        .cover {
+            position: relative;
+            padding-left: 10rem;
+            padding-right: 10rem;
+            color: black;
+            margin-bottom: 1em;
+            background-color: white !important;
+        }
+
+        .cover-text {
+            bottom: 0em;
+            position: absolute;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 74.5%; /* magic number */
+            padding-left: 1em;
+            margin-left: 10rem;
+            margin-right: 10rem;
+            font-size: 2em;
+            height: 3em;
+        }
+
+        .dark-text {
+            color: #000;
+        }
+
+        .cover-img {
+            object-fit: cover;
+            width: 100%;
+            height: 30rem;
+            padding-left: 10rem;
+            padding-right: 10rem;
+        }
+
+        .block-img {
+            object-fit: cover;
+            width: 100%;
+            height: 60%;
+        }
+
+        .wrapper {
+            margin-top: 5.25rem; /* magic number, do something legit later */
+            bottom: 40%;
+        }
+
+        #big-circle-thing {
+            margin: auto;
+            margin-top: 5%;
+            height: 90%;
+            width: 90%;
+            border-radius: 100%;
+            background-color:#ffffff;
+            font-size: 3em;
+            padding-top: 35%;
+            color: #000000;
+            left: auto;
+            right: auto;
+        }
+
+        #circle-wrapper {
+            // margin-left: 0em;
+            max-height: 100%;
+            background: repeating-linear-gradient(
+                45deg,
+                #333,
+                #333 5px,
+                #222 5px,
+                #222 10px
+            );
+        }
+
+        #cent {
+            border-color: #000000;
+            border-left: 3px;
+            border-right: 3px;
+            color: black;
+            font-size: 2em;
+            border: 1px !important;
+        }
+
+        #about {
+            background: repeating-linear-gradient(
+                45deg,
+                #606dbc,
+                #606dbc 10px,
+                #465298 10px,
+                #465298 20px
+            );
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            background-color: ;
+            // border-radius: 0.5em;
+        }
+
+        .dropdown-menu-item {
+            margin-left: 1em;
+            margin-right: 1em;
+            margin-bottom: 1em;
+        }
+
+        .dropdown-menu-item a:hover {
+            text-decoration: none;
+        }
+
+        .dropdown a{
+            color: black !important;
+        }
+
+        .content-row {
+            padding-left: 10rem;
+            padding-right: 10rem;
+        }
+
+        .block-intro {
+            font-size: 1rem;
+        }
+
+        .header-custom {
+            margin-bottom: 1.5em;
+            font-size: 1.25em;
+            margin-top: 1.5em;
+        }
+
+        #navbarNav3 {
+            margin-right: 10rem;
+        }
+
+        #navbar-img {
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        .navbar-brand {
+            margin-left: 10rem;
+            left: 0;
+        }
+
+        .navbar {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        #navbar-container {
+            min-width: 100% !important;
+            padding-left: 0;
+            padding-right: 0;
+            display: block;
+        }
+
+        .col-fill-8 {
+            width: 66%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+        }
+
+        img + em{
+            font-size: 0.8em;
+            display: block;
+            text-align: center;
+        }
+
+        #markdown img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 70%;
+        }
+
+        .navbar-toggler i {
+            color: #EEEEEE;
+        }
+
+        .author {
+            height: 10em;
+        }
+
+        .author-container {
+            margin-right: 0;
+        }
+
+        .author-info {
+            border: 1em;
+            border-color: #999999;
+        }
+
+        #content {
+            margin-top: 55vh;
+            color: #FFFFFF;
+        }
+
+        #markdown {
+            margin-top: 2em;
+            font-family: "Roboto Light";
+            text-align: justify;
+        }
+
+        #markdown p {
+            text-align: justify;
+            font-size: 1.05rem;
+        }
+
+        #markdown p:first-child:first-letter {
+            float: left;
+            font-size: 3em;
+            margin-right: 0.25rem;
+            margin-top: 0.3rem;
+            font-family: "Libre Baskerville";
+        }
+
+        h1 {
+            font-family: "Libre Baskerville";
+        }
+        h2 {
+            font-family: "Libre Baskerville";
+        }
+        h3 {
+            font-family: "Libre Baskerville";
+        }
+        h4 {
+            font-family: "Libre Baskerville";
+        }
+        h5 {
+            font-family: "Libre Baskerville";
+        }
+        h6 {
+            font-family: "Libre Baskerville";
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header-custom">
+        <div class="container" id="navbar-container">
+            <nav class="navbar navbar-expand-md">
+                <a class="navbar-brand" href="#">
+                    <img src="../static/img/logo_black.png" height="30" alt="The Timeless Compass" id="navbar-img">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav3" aria-controls="navbarNav3" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav3">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><strong>Home</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><strong>About</strong></a>
+                        </li>
+                    </ul>
+                    <div class="dropdown">
+                        <a id="categories" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"><strong>Categories</strong></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-menu-item">
+                                <a href="#">Politics and Current Affairs</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="#">Lifestyle</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="#">Pop Culture</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="#">Literature and Philosophy</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="#">Regions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 pl-0 pr-0 cover">
+                <img alt="image" class="img-fluid cover-img mt-1" src="https://www.indianz.com/News/2016/03/14/justintrudeau030416.jpg">
+                <div class="cover-text">
+                    First Nations of Canada: A History of Abuse
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col col-md-8 text-left" id="markdown">
+
+In a recent address to the United Nations General Assembly on September
+20, 2017, Canadian Prime Minister Justin Trudeau discussed the
+challenges that the First Nations people of Canada have faced for
+decades. He stated, “For Indigenous peoples in Canada, the experience
+was mostly one of humiliation, neglect and abuse.”
+
+Indeed, this has been a problem that can be traced back even to Canada’s
+colonial days, where Eurocentric beliefs led the government to pass many
+laws that stripped the First Nations people of their pride and culture.
+One of the most controversial laws passed by the government was the
+Indian Act of 1876, which gave the government the authority to interfere
+with many aspects of First Nations’ affairs, ranging from concerns with
+regards to their land and money, to controlling their access to
+intoxicants. Since its inception, this act has been subject to severe
+criticism. Canadian historian Ken Coates claims that the act “is the
+prime example of the intrusiveness of the Canadian state into the lives
+of Aboriginal people in this country.” The Indian Act has undergone many
+amendments throughout the 19th and 20th centuries, which is a testimony
+to the changes in public opinion throughout history. However, the
+lasting effects of the act cannot be understated, especially considering
+the many attempts made to “tame the savages” by assimilating the First
+Nations people into Canadian culture and strip them of many fundamental
+human rights. Not only was the right to make decisions taken away from
+the First Nations people, but rights to religion and education were also
+taken away. This discrimination led to sky-rocketing poverty rates in
+First Nations communities, as well as high suicide and depression rates
+that far surpassed the national average.
+
+The intrusiveness of the Canadian government cannot be discussed without
+paying special attention to residential schools - church-run
+institutions aimed to assimilate First Nations children into Canadian
+culture and in doing so, “taming the savages”. First established in 1883
+under the Indian Act, First Nation children were forced to separate from
+their families and live in harsh and abusive institutions. Culturally
+deprived and isolated, these children were often beaten and abused by
+their overseers, many of whom were uninformed about First Nation culture
+and believed that it was their duty to educate the “savages”. Elaine
+Durocher, a residential school survivor, explained this situation, “They
+were there to discipline you, teach you, beat you, rape you, molest you,
+but I never got an education.” Many others like Elaine still have
+lasting scars from their time in residential schools, wounds that would
+continue to haunt them years after these incidents.
+
+Yet, this attempt to assimilate First Nations into Canadian culture was
+not only limited to children. The Canadian government outlawed the
+practice of many First Nations traditions, such as Potlatch ceremonies,
+a First Nations celebration ceremony. These ceremonies were held on
+several occasions for a variety of purposes, including the passing of
+titles, names, or responsibilities from a chief to his eldest son, or
+during weddings, funerals, and the establishment of rank. Government
+officers and missionaries described the festivals as “debauchery of the
+worst kind”, as they were considered by the Deputy
+Superintendent-General to generate “pernicious effects” on Indians. This
+clearly highlighted the idea that there were several misconceptions
+about the First Nations people’s cultural practices. However, the
+outlawing of this practice only served to drive it underground. One of
+the most famous underground potlatch ceremonies with the purpose of
+celebrating a wedding was held by Namgis Chief Dan Cranmer during the
+Christmas of 1921. The six-day long celebration was detected by
+government officials, and resulted in 45 people being arrested and
+charged, and 22 people being jailed. Although the ban was removed in
+1951, the consequences are unable to be reversed, and still remain to
+this day – countless cultural artifacts have been lost or destroyed, and
+generations of tradition have been lost in a mere 71 years.
+
+It was only in the last 50 years that the Canadian government began
+taking actions to redress past wrongdoings towards the First Nations
+people. The late 1960s marked a major shift in public attitude towards
+aboriginal peoples. Due to many civil rights movements and the
+aboriginals’ contributions to the First and Second World Wars, Canadians
+began to question discrimination and mistreatment towards them. One of
+the first initiatives to redress these wrongs was introduced by Justin
+Trudeau’s father Pierre Trudeau, who began a new approach in 1969 with
+regards to dealing with First Nation affairs. His policy was based on
+the vision of a “just society”, which mandated that Canadians should be
+entitled to the same rights regardless of their ethnicity, language, or
+history. Commonly known as the “White Paper”, Pierre Trudeau’s proposal
+called for the repealing of the Indian Act and removal of the “Indian
+status” held by First Nations people. However, despite the efforts of
+the Canadian government to right past wrongs for the first time in
+decades, many First Nations communities were not convinced. Many
+believed that the government had overlooked long standing concerns of
+the First Nations people, and viewed this initiative as a “final attempt
+to assimilate Indigenous peoples into the Canadian population.”
+Furthermore, the government’s failure to consult with the First Nations
+people prior to the proposal was severely criticised by many. Harold
+Cardinal, a major critic of the paper, called it “a thinly disguised
+programme of extermination through assimilation” in his book *The Unjust
+Society*.
+
+It would take years of change before the First Nations people of Canada
+started to feel more integrated into Canadian society. Following the
+significant backlash from the First Nations community following the
+publishing of The White Paper, the Trudeau government began to develop
+new policies to mend relationships with the First Nations. A very
+notable shift in aboriginal policies was observed in 1975, with the
+commencing of negotiations between the Canadian government and First
+Nations groups to re-negotiate old treaties. The shift from an
+independent decision making process to a joint effort shows a dramatic
+shift towards Pierre Trudeau’s idea of a “just society”. Since 1975,
+there have been a total of 22 comprehensive claims agreements (modern
+treaties) negotiated, providing the First Nations people with freedom in
+governing and living in their own land.
+
+With the continued success of Trudeau’s policies in the First Nations
+community, his administration continued to develop policies to further
+redress the mistakes of the Canadian government in the past. In 1998,
+Canada finally acknowledged its role in the abuse and mistreatment of
+Aboriginal peoples in residential schools, and in 2007, the Minister of
+Indian and Northern Affairs announced the “Common Experience Package”, a
+$2 billion compensation package for residential school survivors. This
+was largely successful, as $1.62 billion was paid to 78,750 residential
+school survivors, who represented 98% of the 80,000 estimated former
+students, by the end of 2012. Moreover, the rebirth of old traditions
+has been a defining feature of the 21st century, especially with the
+Canadian government providing funds to indigenous schools. Previously
+banned practices such as potlatch ceremonies began to re-emerge, and
+traditional languages such as Cree and Mi’kmaq began being spoken by the
+younger generation. Through the support of the First Nations community,
+young people across Canada are now able to learn about the traditions
+and culture of the aboriginals that have been passed down for
+generations, and are reminded not to fear a culture that they do not
+understand, but instead embrace it.
+
+Living in the free and accepting society that Canada is today, it is
+hard to imagine how less than 75 years ago, the government was condoning
+practices that were discriminatory towards many of its own people. In
+school, we are taught to be accepting of all people regardless of the
+colour of their skin or their religion, which is what I believe must be
+established in order to maintain our vision of a free and democratic
+society. Gone were the days when we took away the cultures and
+traditions of others who did not fit into the ordinary social mould in
+order to provide ourselves with a sense of pride and accomplishment. In
+a world that is so divisive, working together to create a better society
+for everyone – including the First Nations people – has become all the
+more important for Canadians.
+
+With the election of a new Prime Minister in 2015, many aboriginal
+people in Canada continue to hold hopes that Justin Trudeau will follow
+in his father’s footsteps in bringing equality to the First Nations
+people of Canada. These hopes seem to turning into reality, considering
+the younger Trudeau’s promises to “\[close\] socio-economic gaps,
+\[support\] greater self-determination and \[establish\] opportunities
+to work together on shared priorities.” However, these promises have yet
+to manifest themselves as tangible action. Only time will tell if Prime
+Minister Trudeau’s government will succeed in bringing equality to
+communities who have had to endure discrimination and abuse for over a
+century.
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <hr>
+    </div>
+    <section class="fdb-block pt-3 author-info">
+        <div class="container author-info">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-2"></div>
+                <div class="col-3 mt-4 mt-md-0 ml-auto mr-0 mr-md-0 author-container">
+                    <img alt="image" class="img-fluid author" src="../static/img/christopher.png"/>
+                </div>
+                <div class="col-5">
+                    <p class="text-h3"><strong>Christopher Ng</strong>&nbsp; &nbsp;&nbsp;<em>Writer</em></p>
+                    <small>
+                        In his free time, Chris enjoys reading fiction novels or historical articles. He is also active in debate and Model United Nations, which allows him the opportunity to speak about current and historical global affairs. The Timeless Compass presents a unique opportunity for Chris to give his own perspectives and thoughts on events going on in the world right now, and will also allow him to practice his written communication and research skills.
+
+                        Contact: qwertngchris@gmail.com
+                    </small>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
