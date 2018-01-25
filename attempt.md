@@ -1,433 +1,85 @@
-Title: UN Day 2017
-
-Subtitle: The Evolving Unity and Power of the United Nations
-
-By: Angus Yip, Calista Chong, Isabel Toh & Sophie Low
-
-The United Nations has long become a “household name” for international
-relations aficionados, and for everyone who has known Emma Watson as a
-UN Women Goodwill Ambassador in 2014, or heard of the 17 Sustainable
-Development Goals in 2016. It took its place as an international
-organisation that had oversight over countries around the world after
-the Second World War, remaining active since 1945. 24 October 2017
-marked the 72nd year of the UN, a true testament to its pertinence in
-global affairs and politics.
-
-The conception of the United Nations was preceded by the League of
-Nations. Though organisations held similar goals of promoting
-international cooperation and global security, the League of Nations was
-a failure, losing its legitimacy and ultimately ceasing its activities
-after it failed to prevent the outbreak of the Second World War, with
-its existence lasting for no more than 20 years. The contrast between
-the longevity two intergovernmental bodies thus raises the question –
-what exactly led to the stark contrast in the effectiveness between the
-two organisations?
-
-To answer this, we need to first examine the mission of the League of
-Nations. [*Woodrow Wilson’s Fourteen
-Points*](https://www.ourdocuments.gov/doc.php?flash=false&doc=62), a
-statement of principles for peace during the post-WWI negotiations,
-included the recommendation for an “Association of Nations” to maintain
-“Open Diplomacy”. Thus, peaceful arbitration and disarmament were on the
-top of the League of Nations’ agenda. It was a shame that the agenda
-remained unfulfilled for the most part ever since the 42-member strong
-organisation’s establishment in 1919.
-
-The deceptively large membership in the League belies a pernicious
-problem, because some important countries were not part of it. The
-vanquished combatants of World War I, Germany and Austria, were not
-offered membership; the USSR was still distrusted because it was
-governed by Communists; the USA, whose Wilsonian principles arguably
-formed the bedrock of the organisation, was not a member either.
-Instead, the helmsmen of the League of Nations were Britain and France:
-the former essentially regarded the organisation as a “talking shop”,
-while the latter grasped at any opportunity it had to insure itself
-against Germany and wanted the League of Nations to enforce the harsh
-Treaty of Versailles. It is conceivable, as such, that the League of
-Nations would flounder when it was thrust into a pair of uncommitted,
-and unreliable hands.
-
-Moreover, a key covenant of the League was the emphasis on *collective*
-security: all nations who were members were supposed to act in unity
-against the aggressor. While each nation’s security may depend on that
-of all other nations, it was not necessarily the case the other way
-round — countries may not be *dependable* enough to ensure the security
-of a particular nation. Hence, this underscored the difficulty that the
-League faced when dealing with aggression from larger, more powerful
-nations.
-
-![](static/img/un/media/image3.jpg){width="3.4583333333333335in"
-height="3.833957786526684in"}
-
-Did the League of Nations represent more than just an idealistic utopia?
-
-Image source:
-[*2993202.jpg*](http://kcschwartz.weebly.com/uploads/8/3/6/4/8364070/2993202.jpg)
-
-One such example was the Japanese Invasion of Manchuria from 1931 to
-1933. The aggression was triggered by the *Wanpaoshan* Incident in July
-1931, a minor dispute between Chinese and Korean farmers that was
-sensationalised in the Imperial Japan and Korean press to brew
-anti-Chinese sentiments in the empire of Japan. This preceded the
-*Mukden* Incident on 18 September 1931, otherwise known as the
-Manchurian Incident, where the Japanese army staged a bomb explosion in
-the railway in *Mukden*, claiming it was a calculated attack by the
-Chinese, and warranted a formal invasion of Manchuria in order to
-“protect” the railway. How did the League of Nations respond to this
-burgeoning crisis? The League had merely “instructed” the Japanese
-forces to withdraw from Manchuria, and established the Lytton Commission
-of Inquiry led by the Earl of Lytton to investigate the situation. The
-report stated that Japan was the aggressor, and argued that the Japanese
-puppet state of *Manchukuo* should not be recognised, urging Manchurian
-autonomy under Chinese sovereignty. When the findings of the Commission
-were released in the General Assembly and a motion was passed to condemn
-Japan as the aggressor in February 1933, the Japanese delegation stormed
-out of the council. A month later, Japan formally withdrew from the
-League of Nations. This was a stark embarrassment to the League and
-whatever it stood for, and had set a terrible precedent, paving the way
-for future belligerence from other fascist nations, such as Italy.
-
-Italy had emerged from the War dissatisfied with the territorial gains
-it had made, having only conquered dismal territories like Eritrea and
-Somaliland. Ever since, Mussolini’s National Fascist Party (PNF) rose to
-power in 1922, Italy adopted a nationalistic foreign policy, where its
-government employed strong-arm tactics to have their demands met. Three
-years later, in 1935, Italy launched a full-scale invasion of Abyssinia,
-and the latter appealed to the League of Nations for urgent assistance.
-The League responded with a moral condemnation of the aggressor — an
-inconsequential act which Mussolini coolly brushed off. Furthermore, the
-League attempted to impose economic sanctions, barring the sale on arms,
-rubber and metals. Yet, no League member was willing to give up
-potential payoffs for paltry principles. The US, fearing a loss of
-trade, refused to participate in the economic sanctions; Britain and
-France did not even close the Suez Canal they had co-owned, allowing
-Italian troops and ammunition pass to sustain its war in Abyssinia,
-allowing the continuation of bloodshed and gunfire when they should have
-tried to cease it.
-
-The legitimacy of the League of Nations as a platform for international
-arbitration suffered a heavy blow when Minister of Foreign Affairs
-Pierre Laval of France and Foreign Secretary Samuel Hoare of Britain
-carried out secret negotiations with Mussolini, a blatant disregard of
-the League’s purpose. Laval, in the “Franco-Italian Agreement”, agreed
-to cede parts of Somaliland (now known as Dijbouti) to Italy,
-essentially giving the latter a free hand in dealing with Ethiopia. This
-foreboded the Hoare-Laval Plan in December 1935, which enabled Italy to
-control large areas of Abyssinia. When the flagrant deal was leaked in
-the media, the two ministers were accused of betraying the Abyssinians
-in fear of facilitating the deadly alliance of Fascist Italy and Nazi
-Germany, and were forced to resign. While Italy did complete its
-takeover of Abyssinia in 1936, it had done exactly what the British and
-French feared most — Mussolini offered to establish an alliance with
-Adolf Hitler.
-
-![](static/img/un/media/image5.png){width="3.3958333333333335in"
-height="4.951026902887139in"}
-
-A satirical commentary on the apparent leniency of Britain and France
-towards Italy - with vested interests, of course!
-
-Image source:
-[*928679768.png*](http://www.justrememberthepast.com/uploads/3/2/0/1/32010583/928679768.png)
-
-This proverbial saying could wholly sum up the League of Nations: “The
-road to hell is paved with good intentions.” The organisation had first
-started out with the mission to truly make WWI “the war to end all
-wars”, but unfortunately, failed in getting its member states invested
-in this common vision of collective security.
-
-**The United Nations: Successes in Numerous Aspects**
-
-The impact of the United Nations in aiding cooperation can be discussed
-in terms of the different ways it has helped individual states put aside
-their own agendas and come to a consensus about what mankind as a whole
-should aspire towards. Perhaps the bloody events of the Second World War
-reminded countries of the devastating consequences if the refusal to
-cooperate reaches an extreme.
-
-The UN has served as a platform to promote international guidelines
-regarding the treatment of individuals. To that end, it has helped to
-draft numerous laws and conventions that aim to do just that. Countries
-can attempt to grapple with their differing views to devise a consensus
-on basic rights that all countries agree on.
-
-For example, the United Nations Convention on the Rights of the Child –
-a set of guidelines about the basic rights every child should have – was
-made effective in 1990. Countries which choose to ratify the Convention
-must abide by such guidelines and must regularly report to a committee
-regarding their progress in achieving the aims of the Convention.
-Currently, with the exception of the United States, every member of the
-UN has ratified the Convention. Two optional protocols have also been
-ratified by over 160 countries. Apart from such guidelines, the Human
-Rights Council also serves as an avenue for issues regarding human
-rights to be discussed and tackled more concretely and specifically.
-
-Apart from guidelines regarding human rights, the UN has also
-facilitated the drafting of guidelines and laws in a myriad of areas,
-ranging from the definition of naval territorial boundaries (the United
-Nations Convention on the Law of the Sea), to the protection of the
-environment (the United Nations Framework Convention on Climate Change),
-to the use of chemical weapons in warfare (the Chemical Weapons
-Convention). While the number of countries which have ratified these
-different conventions vary (165 countries have ratified the UNCLOS but
-only 65 have ratified the CWC), many people believe that these
-conventions and treaties have been the most successful attempt at global
-cooperation thus far.
-
-Just like how the Human Rights Council tackles issues of human rights,
-there too exist many specialised agencies that aim to address problems
-in different areas. For instance, the UN's [World Food
-Programme](http://www.wfp.org/) (WFP) provides food to 90 million people
-per year, providing aid to those in war zones, areas affected by natural
-disasters, and in poverty-stricken countries. It currently provides aid
-to people in about 80 countries. There also exist numerous councils
-where debate over certain types of issues can be conducted. The web page
-of any Model UN conference will attest to this!
-
-The UN has also allowed for a more efficient provision of aid to states
-which require it. The UN, with its vast resources, is able to respond
-much quicker than any individual nation can, allowing for a more
-coordinated response. This becomes particularly important in times of
-crisis. While developed countries may be able to pay for some or most of
-the funds required to alleviate the impact of a crisis in the
-short-term, most developing countries do not and must turn to external
-sources for help. When every second wasted could mean the difference
-between saving lives or letting them die, time is of the essence. In the
-wake of the 2004 Indian Ocean earthquake and tsunami, one of the
-deadliest natural disasters in history, the UN provided a multifaceted
-response to aid impacted countries. For instance, in Indonesia, the most
-hard-hit country, 400 tons of shelter and other emergency supplies were
-delivered to an initial 100,000 people in Aceh province within days of
-the disaster, helping to prevent any further loss of lives.
-
-Furthermore, after times of conflict, the UN is also authorised (with
-the approval of the Security Council) to send peacekeeping troops to
-monitor areas torn by conflict, with the aim of creating conditions for
-sustainable peace. UN peacekeepers — soldiers and military officers,
-police officers and civilian personnel from many countries — monitor and
-observe peace processes that emerge in post-conflict situations and
-assist ex-combatants in implementing the peace agreements they have
-signed. Such assistance comes in many forms, including
-confidence-building measures, power-sharing arrangements, electoral
-support, strengthening the rule of law, and economic and social
-development.
-
-That being said, UN peacekeeping efforts are also deeply flawed,
-especially because forces can only intervene with the permission of the
-government with jurisdiction over the area. This means that the UN
-cannot intervene in situations where the government is complicit in or
-even actively playing a role in inciting conflict towards particular
-groups of people.
-
-In fact, even when peacekeeping forces are able to intervene, this may
-not necessarily lead to better outcomes. As explained in the next
-section, while the intentions of the UN are mostly good, the reality may
-differ at times – the UN’s intervention may, in actuality, prove
-ineffective in its ability to help.
-
-**The United Nations: Failures and Fiascos**
-
-The most notable failure of the United Nations to maintain peace and
-security was seen in their inability to prevent, and stop, the Rwandan
-Genocide in 1994. The genocide was grounded in racial tensions, where
-Hutu forces sought the mass extermination of the Tutsis. The first
-misstep of the UN was that it disregarded a cable consisting of the
-proposals for intervention, despite having been warned of the imminent
-genocide.
-
-Following the start of the killings, the ineffectiveness of the UN
-surfaced from its constrictive mandate, which disallowed UN forces on
-the ground from using force to intervene. While a mandate, which serves
-as a guide to keep the conduct of peacekeepers in check, appears to be
-efficacious on a theoretical level, this is not the case in reality.
-Branching out from the Rwandan Genocide, the static nature of
-peacekeeping mandates are often the key reasons for the failure of a
-mission. In an area of conflict, the dynamic nature of the situation on
-the ground would naturally require effective and efficient response,
-which then translates into a more flexible mandate. Understandably,
-there are fears as to how the changing nature of mandates may lead to
-misconduct, or inconsistent behaviours. Yet, a balance between ensuring
-a certain level of flexibility, as well as adhering to the main guiding
-principles behind the mandate, must be found.
-
-The Rwandan Genocide, known as the worst failure in UN history, was not
-only plagued by a restrictive mandate, but it also lacked willpower from
-the permanent members of the Security Council. From the start, the
-mission in Rwanda suffered from a severe lack of peacekeeping troops
-that could effectively protect the Tutsis against the Hutus. However,
-due to 18 American peacekeepers having died in the peacekeeping mission
-in Somalia, which was compounded by 10 Belgian peacekeepers being killed
-in Rwanda after the start of the genocide, countries of the UN grew
-increasingly reluctant to provide troops, and/or allow for the troops
-who were already stationed in Rwanda to intervene in the conflict.
-
-![](static/img/un/media/image8.jpg){width="5.505208880139983in"
-height="3.0966797900262466in"}
-
-Newspaper clippings of the 1994 Rwandan Genocide
-
-Source:
-[*http://endgenocide.org/wp-content/uploads/sites/4/2015/04/rwanda-wapo-headline.jpg*](http://endgenocide.org/wp-content/uploads/sites/4/2015/04/rwanda-wapo-headline.jpg)
-
-This also marked the start of a trend, whereby developed countries grew
-increasingly unwilling to send physical troops on UN peacekeeping
-missions, opting to provide equipment or financial resources instead. In
-fact, peacekeeping troops now mainly consist of personnel from less
-developed countries, as seen from the permanent members of the security
-council decreasing its troop contributions from 20% in 1994 to 5% in
-2004. This may be an effective solution to cover missions in the short
-run, but in the long run, as countries become more developed, we may end
-up facing a manpower shortage. Without boots on the ground, the
-plenitude of material resources would thus be redundant. Crucially,
-however, the Rwandan Genocide should not be viewed in a vacuum. It may
-appear to be the biggest failure in UN history, but perhaps, it is the
-first step towards the reformation of the UN to improve on the current
-limitations of their interventions, and work towards greater success as
-an international organization that maintains peace and security around
-the globe.
-
-However, another key reason for the ineffectiveness of the UN in
-handling peacekeeping missions is also the lack of effective cooperation
-between itself, and the regional body in which the missions are held.
-Significantly, most operations have been on the continent of Africa (9
-out of 16 currently). This would hence call for greater coordination
-between the UN and the African Union (AU), allowing for the
-capitalisation on the strengths of each side. For example, monetary
-resources and weaponry could be provided by the UN, which has greater
-financial capabilities, while the AU could provide manpower due to its
-proximity to the affected countries which would allow for quicker
-deployment, as well as the soldiers being better able to connect with
-the people on the ground. Yet, there are problems that plague such
-cooperation — for example, both organisations view the roles of their
-interventions differently. While the AU intervenes with the purpose of
-establishing a peace, the UN only enters the country after peace has
-been established, and seeks to maintain the said peace. Furthermore,
-peacekeeping operations and their mandates are often decided by members
-of the UN Security Council. However, as members are elected in the UNSC,
-this may result in affected African countries, which had not been
-selected for that particular term, being unable to voice their opinions.
-Relievingly, the UN had commissioned a report on peacekeeping operations
-— the Brahimi Report — in 2000. This called for increased cooperation
-between the UN and regional bodies and other third parties.
-
-**Overall Impact of the UN**
-
-However, despite the failures of the UN, the organisation has evolved
-and progressed significantly since its days as the League of Nations,
-which was unable to prevent the outbreak of World War II due to the lack
-of collective unity amongst member states. Comprising 192 member states
-that are in support of its founding Charter, the UN is the only
-organisation with the ability to take strong action on issues
-confronting humanity in the 21st Century, including peace and security,
-human rights and governance problems. The UN is also the one and only
-platform for countries of all sizes to engage in meaningful dialogues,
-as well as come up with solutions to pertinent world issues together.
-Since its founding 72 years ago, the UN has played major roles in
-combating terrorism, preventing genocides, promoting women’s
-development, improving literacy and education, as well as reducing child
-mortality through encouraging the signing of treaties and agreements
-amongst countries.
-
-24 October is known as the United Nations Day. This is the day in 1945
-when the Charter of the United Nations entered into force. It is a day
-where people from all over the world come together in celebration of the
-impactful work accomplished by the United Nations, as well as raise
-awareness on the aims and achievements of the UN. Although not widely
-practiced in most countries, in 1971, the United Nations General
-Assembly recommended that 24 October be observed by Member States as a
-holiday. Instead, the UN Day is generally commemorated in various member
-states through meetings, discussions and exhibits about the UN. In
-Singapore, during UN Day in 2015, 6 landmarks in Singapore were lit up
-in blue, which is the official colour of the UN, to commemorate the 70th
-Anniversary of the UN and Singapore’s 50th year of membership in the
-organisation as part of the ‘Turn the World UN Blue’ initiative.
-Landmarks in other countries that joined this initiative include the
-Empire State Building in New York, United States as well as the Sydney
-Opera House in Sydney, Australia. Meanwhile this year, at the UN
-Headquarters in New York, a concert themed ‘Potential in Diversity’ was
-organised to commemorate this day.
-
-![](static/img/un/media/image6.jpg){width="4.630208880139983in"
-height="3.0868055555555554in"}
-
-The Supertrees at Gardens By the Bay were one of the 6 landmarks that
-turned blue on 25 October 2015 in support of the ‘Turn The World UN
-Blue’ Initiative.
-
-Source:
-[*https://static.straitstimes.com.sg/sites/default/files/styles/article\_pictrure\_780x520\_/public/articles/2015/10/25/st\_20151025\_jsblue25\_1786814.jpg?itok=39PfhiGt*](https://static.straitstimes.com.sg/sites/default/files/styles/article_pictrure_780x520_/public/articles/2015/10/25/st_20151025_jsblue25_1786814.jpg?itok=39PfhiGt)
-
-Though the UN may not be the most successful avenue in instilling world
-peace and has its moments of failure — from the Rwandan Genocide, where
-the UN sent in too few peacekeeping troops to protect the Tutsis, to
-poor collaboration between the African Union and the UN — it remains the
-best platform for multilateral discussions. In the words of Singapore’s
-current Minister for Foreign Affairs Dr Vivian Balakrishnan, ‘for better
-or for worse, the UN is still our best bet for a world with global
-peace, justice and fairness in the future.’ The state of the current UN
-may not be perfect, but as the next generation of leaders and citizens,
-we have the power to better the UN system, and to work together in
-ensuring peace and stability in this world we call home.
-
-ARTICLE OUTLINE:
-
-Article outline:
-
--   Failures of the LoN
-
-    -   What’s fundamentally different?
-
-    -   LoN failures because of how it is structured/run
-
-    -   Sources:
-
-        -   My Y4 History worksheet
-
-        -   [*https://books.google.com.sg/books?id=YugJ424jj4MC&pg=PA45&dq=league+of+nations+vs.+UN&hl=en&sa=X&ved=0ahUKEwi-jcS7\_YvXAhWIs48KHQajA\_8Q6AEIJjAA\#v=onepage&q=league%20of%20nations%20vs.%20UN&f=false*](https://books.google.com.sg/books?id=YugJ424jj4MC&pg=PA45&dq=league+of+nations+vs.+UN&hl=en&sa=X&ved=0ahUKEwi-jcS7_YvXAhWIs48KHQajA_8Q6AEIJjAA#v=onepage&q=league%20of%20nations%20vs.%20UN&f=false)
-
-        -   [*https://en.wikipedia.org/wiki/Lytton\_Report\#Consequences*](https://en.wikipedia.org/wiki/Lytton_Report#Consequences)
-
-        -   [*https://en.wikipedia.org/wiki/Japanese\_invasion\_of\_Manchuria\#Resistance\_to\_the\_Japanese\_invasion*](https://en.wikipedia.org/wiki/Japanese_invasion_of_Manchuria#Resistance_to_the_Japanese_invasion)
-
-        -   [*https://en.wikipedia.org/wiki/Abyssinia\_Crisis*](https://en.wikipedia.org/wiki/Abyssinia_Crisis)
-
-[*http://www.ibtimes.co.uk/united-nations-day-2014-five-greatest-achievements-un-since-1945-1471495*](http://www.ibtimes.co.uk/united-nations-day-2014-five-greatest-achievements-un-since-1945-1471495)
-
-[*http://www1.wfp.org/overview*](http://www1.wfp.org/overview)
-
--   UN successes: how do the differences between the LoN and the UN
-    > allow the UN to run more successfully?
-
-    -   Examples:
-        > [*http://www.ohchr.org/EN/ProfessionalInterest/Pages/CRC.aspx*](http://www.ohchr.org/EN/ProfessionalInterest/Pages/CRC.aspx)
-
--   UN failures - peacekeeping operations
-
-    -   Rwandan Genocide in 1994 (inflexible mandate that did not allow
-        > for UN forces in Rwanda to stop the killings)
-
-    -   Bosnia Massacre in 1995
-        > [*http://www.nytimes.com/1999/11/16/world/un-details-its-failure-to-stop-95-bosnia-massacre.html*](http://www.nytimes.com/1999/11/16/world/un-details-its-failure-to-stop-95-bosnia-massacre.html)
-        > (unwillingness of the UN to provide sufficient manpower
-        > for missions)
-
--   Discuss the inherent limitations of the UN’s effectiveness - an
-    > intergovernmental organization serving to preserve international
-    > security and peace, when countries are fundamentally self-seeking
-    > and self-serving countries aiming to drive their interests on the
-    > global stage? (How to reconcile differences goals between
-    > individual states and the UN as a whole?)
-
-    -   USA’s resolution during the Korean War which allowed for
-        > intervention in the civil war
-
--   Overall outlook on UN - will it continue to succeed? Or are there
-    > any recent events that point towards the decline of its ability?
-
-    -   Can it adapt to the changing political landscape? Talk about the
-        > issue of G4 in the reform of the UNSC - power struggle in the
-        > P5
-
-[*http://www.telegraph.co.uk/news/worldnews/europe/bosnia/11729436/Srebrenica-20-years-on-What-have-been-the-successes-and-failures-of-UN-peacekeeping-missions.html*](http://www.telegraph.co.uk/news/worldnews/europe/bosnia/11729436/Srebrenica-20-years-on-What-have-been-the-successes-and-failures-of-UN-peacekeeping-missions.html)
-
-[*http://www.telegraph.co.uk/news/worldnews/europe/switzerland/11700969/UN-at-70-Five-greatest-successes-and-failures.html*](http://www.telegraph.co.uk/news/worldnews/europe/switzerland/11700969/UN-at-70-Five-greatest-successes-and-failures.html)
+On November 18, Filipinos stood in reverence as they witnessed the
+burial of the prominent dictator, Ferdinand Marcos, in the National
+Heroes’ Cemetery, also known as *Libingan ng mga Bayani*. This move by
+the newly elected President Duterte elicited strong sentiments and
+sparked heated debate between two strong groups - fervent Marcos
+supporters and those who suffered under Marcos’ rule. Despite the big
+commotion caused by the burial, few onlookers were aware of the
+historical context of the controversy.
+
+Located in Southeast Asia, the Philippines has gone through major
+political revolutions since the arrival of its first colonial power, the
+Spaniards. Amongst all the revolutions, however, the People Power
+Revolution remains the most significant one as it acted as the pivot
+towards turning the Philippines into a democratic country.
+
+In 1983, the assassination of pro-democracy leader Senator Benigno S.
+“Ninoy” Aquino Jr. following his return after a three-year exile in the
+United States raised a furore over the Marcos regime. Aquino’s
+supporters gathered to call for an end to the Marcos’ dictatorship. This
+was the start of a series of popular demonstrations against brutality
+and corruption that the Marcos regime represented. Eventually, the
+demonstrations led to economic recession while at the same time
+weakening the Marcos administration.
+
+In an attempt to regain his popularity, Marcos held a snap presidential
+election one year ahead of the typical election schedule on February 7,
+1986 and ran against Aquino’s widow, Maria Corazon "Cory" Sumulong
+Aquino. This election sparked yet another controversy as it was revealed
+that the official election results were deliberately manipulated to
+favour Marcos. Several turned to demonstrations to express their anger,
+and 35 computer technicians from the Commission on Elections (COMELEC)
+even staged a walkout to protest against the biased system. However,
+amidst the controversy, Marcos was still declared the official winner.
+
+The corrupt and deceitful election was the last straw for the repressed
+Filipinos. They refused to concede to the election results, resulting in
+greater mass support for Aquino. Aquino initiated coordinated strikes
+and mass boycott of the media and businesses owned by Marcos’ cronies,
+which eventually led to the debilitation of Marcos’ government.
+
+In an unexpected turn of events, Marcos’ Defence Minister Juan Ponce
+Enrile and Armed Forces Vice-Chief of Staff Command Fidel V. Ramos
+withdrew support from the Marcos government. This marked the beginning
+of the non-violent revolution. Archbishop Jaime Cardinal Sin who
+represented the Catholic church also utilised the power of radio to
+garner the support of pro-democracy Filipinos. Armed marine troops that
+were initially deployed to oppose the Aquino supporters turned their
+back on Marcos, leaving Marcos with neither supporters nor the necessary
+military power. Bereft of choice, Marcos and his family left the
+Philippines for Hawaii in exile. Meanwhile, a delighted nation
+celebrated the inauguration of Corazon Aquino.
+
+After the dramatic episode, Filipinos regained their freedom and the
+People Power Revolution was seen as a turning point in the Philippines’
+political history. Many believed that the revolution signalled a new era
+with better governance and a more transparent political system.
+
+While the downfall of the corrupt and authoritarian President was
+certainly anticipated, what is most surprising is how many Filipinos
+still remain staunch supporters of the Marcos presidency till this day,
+30 years after his expulsion. Many have alluded this to the Philippines’
+soft and forgiving culture that has allowed Filipinos to bury the
+hatchet and continue holding respect for their former President. Others
+have also argued that though Filipinos lived in fear under Marcos’
+dictatorship, that sense of fear was also key in maintaining discipline,
+peace and security in the country. With Marcos’ Martial Law in place to
+combat civil disobedience and lawlessness that threatened national
+security, the citizens’ welfare was well protected.
+
+Another reason points more towards Aquino. Some Filipinos felt that
+Aquino, whom they pinned their hopes on for a brighter future, did
+little to improve their quality of life. The absence of the disciplinary
+figure, in addition to a society lacking in self-control, culminated in
+a disorderly nation. The freedom once promised by the Aquino
+administration seemed to have gone no further than democratic
+governance, with fundamental issues such as poverty, starvation and the
+worsening crime situation remaining unsolved.
+
+We will never know whether the Philippines would be different today if
+Marcos had remained in power. After all, history can never be reversed
+or rewritten. But what we can do is to hope that the newly elected
+President Duterte will fulfil his promises and transform the Philippines
+into a country that future generations will be proud of. Whether he
+manages to achieve this considering his current track record remains to
+be seen.
