@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- <link rel="stylesheet" type="text/css" href="static/css/theme.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="static/css/custom.css" /> -->
+    <!-- Compass by Optimus Prime from the Noun Project -->
+    <link type="text/css" rel="stylesheet" href="../static/css/froala_blocks.css">
+    <!--<link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet"> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/js/try.js"></script>
+    <script type="text/javascript" src="../static/js/Markdown.Converter.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../static/css/fonts/fonts.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto+Light" rel="stylesheet">
+     <script type="text/javascript" src="https://cdn.rawgit.com/showdownjs/showdown/1.8.5/dist/showdown.min.js"></script>
+    <script>
+
+        $(document).ready(function() {
+            var txt = $("#markdown").html();
+            var converter = new showdown.Converter();
+            var htmlContent = converter.makeHtml(txt);
+            $('#markdown').html(htmlContent);
+            console.log("Success");
+        })
+    </script>
+
+    <style>
+
+        body {
+            font-family: 'Open Sans Condensed';
+        }
+
+        .block {
+            height: 20rem;
+            font-size: 1.5em;
+            padding-left: 0;
+            padding-right: 0;
+            // position: relative;
+            color: white;
+        }
+
+        .block-text {
+            padding-left: 0.5em;
+            padding-right:0.5em;
+            bottom: 0em;
+            font-family: 'Open Sans Condensed';
+            // position: absolute;
+            color: black;
+            // background-color: rgba(0, 0, 0, 0.5);
+            height: 5em;
+            width: 100%;
+        }
+
+        .cover {
+            position: relative;
+            padding-left: 10rem;
+            padding-right: 10rem;
+            color: black;
+            margin-bottom: 1em;
+            background-color: white !important;
+        }
+
+        .cover-text {
+            bottom: 0em;
+            position: absolute;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: auto; /* magic number */
+            right: 10rem;
+            padding-left: 1em;
+            left: 10rem;
+
+            font-size: 2em;
+            height: 3em;
+        }
+
+        .dark-text {
+            color: #000;
+        }
+
+        .cover-img {
+            object-fit: cover;
+            width: 100%;
+            height: 30rem;
+            padding-left: 10rem;
+            padding-right: 10rem;
+        }
+
+        .block-img {
+            object-fit: cover;
+            width: 100%;
+            height: 60%;
+        }
+
+        .wrapper {
+            margin-top: 5.25rem; /* magic number, do something legit later */
+            bottom: 40%;
+        }
+
+        #big-circle-thing {
+            margin: auto;
+            margin-top: 5%;
+            height: 90%;
+            width: 90%;
+            border-radius: 100%;
+            background-color:#ffffff;
+            font-size: 3em;
+            padding-top: 35%;
+            color: #000000;
+            left: auto;
+            right: auto;
+        }
+
+        #circle-wrapper {
+            // margin-left: 0em;
+            max-height: 100%;
+            background: repeating-linear-gradient(
+                45deg,
+                #333,
+                #333 5px,
+                #222 5px,
+                #222 10px
+            );
+        }
+
+        #cent {
+            border-color: #000000;
+            border-left: 3px;
+            border-right: 3px;
+            color: black;
+            font-size: 2em;
+            border: 1px !important;
+        }
+
+        #about {
+            background: repeating-linear-gradient(
+                45deg,
+                #606dbc,
+                #606dbc 10px,
+                #465298 10px,
+                #465298 20px
+            );
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            background-color: ;
+            // border-radius: 0.5em;
+        }
+
+        .dropdown-menu-item {
+            margin-left: 1em;
+            margin-right: 1em;
+            margin-bottom: 1em;
+        }
+
+        .dropdown-menu-item a:hover {
+            text-decoration: none;
+        }
+
+        .dropdown a{
+            color: black !important;
+        }
+
+        .content-row {
+            padding-left: 10rem;
+            padding-right: 10rem;
+        }
+
+        .block-intro {
+            font-size: 1rem;
+        }
+
+        .header-custom {
+            margin-bottom: 1.5em;
+            font-size: 1.25em;
+            margin-top: 1.5em;
+        }
+
+        #navbarNav3 {
+            margin-right: 10rem;
+        }
+
+        #navbar-img {
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        .navbar-brand {
+            margin-left: 10rem;
+            left: 0;
+        }
+
+        .navbar {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        #navbar-container {
+            min-width: 100% !important;
+            padding-left: 0;
+            padding-right: 0;
+            display: block;
+        }
+
+        .col-fill-8 {
+            width: 66%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+        }
+
+        img + em{
+            font-size: 0.8em;
+            display: block;
+            text-align: center;
+        }
+
+        #markdown img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 70%;
+        }
+
+        .navbar-toggler i {
+            color: #EEEEEE;
+        }
+
+        .author {
+            height: 10em;
+        }
+
+        .author-container {
+            margin-right: 0;
+        }
+
+        .author-info {
+            border: 1em;
+            border-color: #999999;
+        }
+
+        #content {
+            margin-top: 55vh;
+            color: #FFFFFF;
+        }
+
+        #markdown {
+            margin-top: 2em;
+            font-family: "Roboto Light";
+            text-align: justify;
+        }
+
+        #markdown p {
+            text-align: justify;
+            font-size: 1.05rem;
+        }
+
+        #markdown p:first-child:first-letter {
+            float: left;
+            font-size: 3em;
+            margin-right: 0.25rem;
+            margin-top: 0.5rem;
+            font-family: "Libre Baskerville";
+        }
+
+        h1 {
+            font-family: "Libre Baskerville";
+        }
+        h2 {
+            font-family: "Libre Baskerville";
+        }
+        h3 {
+            font-family: "Libre Baskerville";
+        }
+        h4 {
+            font-family: "Libre Baskerville";
+        }
+        h5 {
+            font-family: "Libre Baskerville";
+        }
+        h6 {
+            font-family: "Libre Baskerville";
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header-custom">
+        <div class="container" id="navbar-container">
+            <nav class="navbar navbar-expand-md">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../static/img/logo_black.png" height="30" alt="The Timeless Compass" id="navbar-img">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav3" aria-controls="navbarNav3" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav3">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html"><strong>Home</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../about.html"><strong>About</strong></a>
+                        </li>
+                    </ul>
+                    <div class="dropdown">
+                        <a id="categories" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"><strong>Categories</strong></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-menu-item">
+                                <a href="../construction.html">Politics and Current Affairs</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="../construction.html">Lifestyle</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="../construction.html">Pop Culture</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="../construction.html">Literature and Philosophy</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="../construction.html">Regions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 pl-0 pr-0 cover">
+                <img alt="image" class="img-fluid cover-img mt-1" src="../static/img/olympics/cover.jpg">
+                <div class="cover-text">
+                    All That Glitters Is Not Gold: The Dark Side of the Olympics
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col col-md-8 text-left" id="markdown">
+
+*Many seem to place Olympic athletes on a pedestal, but is there more to
+those glittering medals than meets the eye?*
+
+‘Citius, altius, fortius’ – the Latin equivalent of ‘faster, higher,
+stronger’ – is a phrase that we have likely come across at one point or
+another. As the motto of the Olympics Games, it encourages participants
+to scale heights, push boundaries, and reset standards. Modern day
+Olympics has evolved from the ancient Olympics in many ways.
+
+Originating from ancient Greece more than 3000 years ago, the Olympic
+Games have a long history tracing back to 776 BC. The Games were staged
+every 4 years, till they were abolished in the early Christian era, only
+to be revived in 1896 in Athens. 280 participants from 13 nations took
+part in 43 events such as swimming, gymnastics and cycling. However,
+only men were allowed to attend the Games, as its founder Pierre de
+Coubertin deemed women’s involvement in the Games as ‘impractical,
+uninteresting, unaesthetic, and incorrect’.
+
+Modern times, however, have seemed to provide women with the tools to
+shatter the glass ceiling in the sports arena. For instance, the
+historic decision mandating that “any new sport seeking to be included
+on the Olympic programme had to include women’s events” by the
+International Olympic Committee in 1991 signalled a step towards
+achieving equality. A year later in 1992, badminton, judo, and biathlon
+were open to female athletes, and by the 2000s, an increasing number of
+sports including wrestling and ice hockey became open to women’s
+participation as well. More recently, the 2016 Rio Olympic Games
+provided a breakthrough for women, with record-high figures indicating
+that almost 50% of the total athletes at the Games were females. This
+was in comparison to a century ago where the goal of gender equality is
+still quite far-reaching, as displayed by the higher number of events
+exclusive to men, such as wrestling. Clearly, there has been leaps made
+in terms of achieving gender equality, especially in women’s
+participation in the Games since the ancient times.
+
+However, an issue which shone the spotlight on the effects of patriarchy
+in the sports arena surfaced recently, shocking people from all around
+the world. The recent sexual abuse case involving USA Gymnastics (USAG)
+and former national team doctor Larry Nassar revealed the systemic
+issues that the aforementioned organisation has turned a blind eye to.
+USAG, a dominant organisation in the gymnastics field which has produced
+gymnasts who have consistently won accolades, held a dark secret for
+years. It failed to act accordingly despite its female gymnasts’
+complaints about Nassar’s sexual advances towards them. Then Michigan
+State sports physician, Nassar had bribed his victims to keep mum about
+his misdeeds, and when victims confided in a USAG coach, they were
+discouraged from filing formal complaints. The fact that the USAG team
+failed to prioritise their gymnasts’ welfare was appalling, and
+illustrates the outrageous acts that the organisation tolerates in its
+pursuit of gold medals. Many were unaware of such acts, as the pain and
+humiliation felt by the gymnasts were masked by their forced smiles as
+they received their medals and attempted to bask in glory, while hiding
+a sinister secret.
+
+There are definitely cultural benefits with the progress of the
+Olympics. It is undeniably true that the number of hosting countries and
+participants expanded exponentially from the ancient times, now
+involving more than 27,000 athletes from more than 200 countries. The
+progress of the Olympics serves most importantly to link culture to
+sports, with athletes from different countries getting exposed to the
+enriched history of each host country, and through interaction with
+athletes from different countries.
+
+#### The ‘Dark Side’ of the Games:
+
+**Scoring the goal with a gold – but at what cost?**
+
+Though the Olympics appears to be all glitz and glamour, there have been
+several pressing issues that, though hidden from the spotlight, are
+problems that need to be solved.
+
+First and foremost, there exists a strong association between olympic
+sports and social exclusion. Training for the Olympics is no doubt a
+costly endeavour, and requires a great amount of support ranging from
+emotional, physical, and financial reinforcement. Money is needed to
+hire the best coaches, the most renowned nutritionists, top-notch
+technology that can aid in training, and the best suits and attire that
+could shave off milliseconds in one’s race. Yet, these are luxuries that
+some cannot afford to have. In rural countries, where there is a lack of
+support from family members or the state, there are many talented
+individuals that have gone unfounded or ignored. The fact that budding
+athletes are denied the chance to hone their skills in the sport of
+their choice because of the lack of financial support underscores the
+idea that the Olympics is an exclusive enterprise, which is ironically
+contrary to the mission of the International Olympic Committee’s mission
+to encourage people to practice sport regardless of their backgrounds or
+economic status.
+
+As an athlete myself, I am familiar with the need to make frequent
+purchases for suits and equipment for training, especially since all of
+these are marketed by advertisements claiming to have made use of the
+latest technology. Thankfully, with my parents’ support, I have the
+financial ability to purchase the brand, colour and size of swimsuits
+which I desire. This goes to show that most of the time, behind every
+successful athlete lies a stellar team – the most renowned athletes have
+coaches, nutritionists, personal chauffeurs, and supportive parents to
+guide them. While the training and hard work that athletes put in are
+important, the extra resources that they are given lends them a slight
+advantage, which ultimately makes the most difference in a highly
+competitive sporting arena, as exemplified by the Olympics. Yet, many
+around the world are not privileged enough to receive such privileges –
+their future in the Olympics seems to have been predetermined.
+
+Yet, due to the overwhelming pressure of having to perform, some
+athletes have flouted the Games’ rules by committing crimes such as
+doping. For instance, Russian athletes were recently banned from the
+Winter Olympics over state-sponsored drugs, which aimed to speed up
+their recovery process. Tainted urine samples were switched with the
+intent of passing the doping test. Other groups have also appeared to
+have defied the spirit of the Games, pushing themselves to the point
+where their emotional needs are compromised. In fact, governments play a
+part in perpetuating this. For instance, there exists a ‘win at all
+costs’ mentality in China, which has received backlash from the public.
+Children as young as the age of four are put through tough training
+camps, leaving the comforts of their homes to train. Some parents have
+even taken on the role as a coach, training their children to push their
+boundaries at a tender age. Others have sacrificed their children's’
+childhoods in hopes of creating an Olympic athlete, thinking that
+sending them to training camps would pave a bright future for their
+child. At times, children are not even allowed to see their families due
+to the fear that they might become ‘distracted’. A case in point would
+be the lengths that Chinese diver Wu Minxia’s family went to to ensure
+their daughter’s success, where they concealed the death of both her
+grandparents and her mother’s eight-year battle with breast cancer when
+she was training for the 2012 London Olympics, such that she would
+remain focused and win medals for her country.
+
+Though many other parents of up-and-coming athletes are reluctant to
+send off their children, they often agree to part with them because of
+the belief that they will be able to help their families break out of
+the poverty cycle, and achieve a brighter future. But how many have
+truly gone on to reach an apex, or successfully pursued sports as a
+career? How many have stayed at the top after winning a few awards? The
+glory that being an Olympian brings does not always stay – Zhang
+Shangwu, a gold medallist at the Olympics, was found begging on the
+streets in Beijing after his sporting career ended due to an injury.
+Because Zhang did not have an education, he was unable to find a stable
+job, and thus resorted to begging on the streets. He is one of the many
+athletes who have been expelled from the state sports system after
+failing to continue competing to bring glory to the state.
+
+However, these countries are not the only ones which have tainted the
+spirit of the Olympics. There exist many other states which have
+prioritised their athletes’ achievements over honouring the true meaning
+of the Games, even if the media has not shone a spotlight on them.
+Though altering and eliminating mindsets which prioritise tangible
+success over everything else would be an ideal situation, this is
+especially challenging when the state itself condones such beliefs and
+practices. It is often difficult to discredit the valid desire for
+nations to gain glory and fame through the success of their athletes who
+bag medals at the prestigious Olympic Games, as such attention can also
+be used to bring progress to the growth of the country as a whole. In
+fact, these issues are not completely new either. Similar violations
+were also observed in the ancient Olympic Games. During the 98th
+Olympics in 388 B.C., a boxer bribed his opponents to let him win, and
+both athletes were subsequently fined. In another case, a wrestler tried
+to gouge the eyes of his opponent and bite him. However, athletes were
+more brutally punished then, and were beaten by rods for fouling their
+opponents or cheating to gain an edge.
+
+**So… What’s next after the Olympics?**
+
+A lot of the time, the Olympic Games are put on the pedestal by
+athletes, and viewed as the pinnacle of all sports – winning a coveted
+medal at the Games is almost every athlete’s dream. However, even after
+being awarded a coveted medal at the Games, many athletes end up
+struggling with a sense of loss. Though their hard work may have paid
+off after years of blood, sweat, tears and sacrifice, they are often
+uncertain of their future and are unsure of what the next goal should
+be.
+
+In fact, many athletes are unable to come to terms with the idea that
+the Olympics is not the be-all and end-all. Granted, the Olympic Games
+is an international platform where top-notch athletes gather to display
+the skills that they have worked hard to accumulate over the years.
+However, there are several other competitions which allow athletes to do
+the same, or even more. For instance, when participating in local
+competitions, athletes gain the opportunity to display their support for
+the sport, and inspire their fellow countrymen. Seeking for the next
+goal is the only way to continue striving, which is an attitude that was
+embodied by Singapore’s first Olympic gold medallist Joseph Schooling
+after his win at the Olympics. “\[It was nice\] after my race… It was
+crazy and everything was just nuts. But right now, I’m kind of looking
+forward to the next step,” he shared. His ability to aim higher, push
+his boundaries, and better himself beyond the Olympics, is truly
+commendable. This, perhaps, reveals that there is more to life than the
+pursuit of that one gold Olympic medal.
+
+In a sense, the “win or die” attitude can be said to have persisted from
+the ancient Olympics to today’s modern Games. While many place Olympians
+on a pedestal, there are, in actuality, many darker issues hidden behind
+the shiny medals. Behind every medal and every smile lies a story, often
+untold, which tends to be cast aside to make way for the glory and fame
+that overwhelms athletes, parents, coaches and the public. All that
+glitters is not gold; the truth behind the shiny sheen may be dark,
+disappointing and deceiving, but only by acknowledging it and committing
+to making a change, can we step out of this dark tunnel into the light.
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <hr>
+    </div>
+    <!--<section class="fdb-block pt-3 author-info">
+        <div class="container author-info">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-2"></div>
+                <div class="col-3 mt-4 mt-md-0 ml-auto mr-0 mr-md-0 author-container">
+                    <img alt="image" class="img-fluid author" src="../static/img/morris.jpg"/>
+                </div>
+                <div class="col-5">
+                    <p class="text-h3"><strong>Morris Yang</strong>&nbsp; &nbsp;&nbsp;<em>Writer</em></p>
+                    <small>
+                        Morris is a Junior College student who simply cannot stop thinking about what it means to think. (He says this not to posture himself intellectually.) Sit him down to discuss politics, or how we view and consume current affairs, or popular culture, or great literary works, or film, or philosophy, and he'll treat you to coffee. He also enjoys great music (right now it's his Spotify playlist, as will always be). The Timeless Compass, he thinks, provides a great opportunity to express his views and develop them in response to what his esteemed readers think.
+
+                        Contact: morrisycy@gmail.com
+                    </small>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+    </section>-->
+    <br>
+    <footer class="fdb-block footer-small">
+        <div class="container">
+            <div class="row text-center pb-0">
+                <div class="col">
+                    <p class="mb-0">&copy; 2018 The Timeless Compass. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

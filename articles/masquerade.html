@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- <link rel="stylesheet" type="text/css" href="static/css/theme.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="static/css/custom.css" /> -->
+    <!-- Compass by Optimus Prime from the Noun Project -->
+    <link type="text/css" rel="stylesheet" href="../static/css/froala_blocks.css">
+    <!--<link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet"> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/js/try.js"></script>
+    <script type="text/javascript" src="../static/js/Markdown.Converter.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../static/css/fonts/fonts.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto+Light" rel="stylesheet">
+    <script>
+
+        $(document).ready(function() {
+            var txt = $("#markdown").html();
+            var converter = new Markdown.Converter();
+            var htmlContent = converter.makeHtml(txt);
+            $('#markdown').html(htmlContent);
+            console.log("Success");
+        })
+    </script>
+
+    <style>
+
+        body {
+            font-family: 'Open Sans Condensed';
+        }
+
+        .block {
+            height: 20rem;
+            font-size: 1.5em;
+            padding-left: 0;
+            padding-right: 0;
+            // position: relative;
+            color: white;
+        }
+
+        .block-text {
+            padding-left: 0.5em;
+            padding-right:0.5em;
+            bottom: 0em;
+            font-family: 'Open Sans Condensed';
+            // position: absolute;
+            color: black;
+            // background-color: rgba(0, 0, 0, 0.5);
+            height: 5em;
+            width: 100%;
+        }
+
+        .cover {
+            position: relative;
+            padding-left: 10rem;
+            padding-right: 10rem;
+            color: black;
+            margin-bottom: 1em;
+            background-color: white !important;
+        }
+
+        .cover-text {
+            bottom: 0em;
+            position: absolute;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: auto; /* magic number */
+            right: 10rem;
+            padding-left: 1em;
+            left: 10rem;
+
+            font-size: 2em;
+            height: 3em;
+        }
+
+        .dark-text {
+            color: #000;
+        }
+
+        .cover-img {
+            object-fit: cover;
+            width: 100%;
+            height: 30rem;
+            padding-left: 10rem;
+            padding-right: 10rem;
+        }
+
+        .block-img {
+            object-fit: cover;
+            width: 100%;
+            height: 60%;
+        }
+
+        .wrapper {
+            margin-top: 5.25rem; /* magic number, do something legit later */
+            bottom: 40%;
+        }
+
+        #big-circle-thing {
+            margin: auto;
+            margin-top: 5%;
+            height: 90%;
+            width: 90%;
+            border-radius: 100%;
+            background-color:#ffffff;
+            font-size: 3em;
+            padding-top: 35%;
+            color: #000000;
+            left: auto;
+            right: auto;
+        }
+
+        #circle-wrapper {
+            // margin-left: 0em;
+            max-height: 100%;
+            background: repeating-linear-gradient(
+                45deg,
+                #333,
+                #333 5px,
+                #222 5px,
+                #222 10px
+            );
+        }
+
+        #cent {
+            border-color: #000000;
+            border-left: 3px;
+            border-right: 3px;
+            color: black;
+            font-size: 2em;
+            border: 1px !important;
+        }
+
+        #about {
+            background: repeating-linear-gradient(
+                45deg,
+                #606dbc,
+                #606dbc 10px,
+                #465298 10px,
+                #465298 20px
+            );
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            background-color: ;
+            // border-radius: 0.5em;
+        }
+
+        .dropdown-menu-item {
+            margin-left: 1em;
+            margin-right: 1em;
+            margin-bottom: 1em;
+        }
+
+        .dropdown-menu-item a:hover {
+            text-decoration: none;
+        }
+
+        .dropdown a{
+            color: black !important;
+        }
+
+        .content-row {
+            padding-left: 10rem;
+            padding-right: 10rem;
+        }
+
+        .block-intro {
+            font-size: 1rem;
+        }
+
+        .header-custom {
+            margin-bottom: 1.5em;
+            font-size: 1.25em;
+            margin-top: 1.5em;
+        }
+
+        #navbarNav3 {
+            margin-right: 10rem;
+        }
+
+        #navbar-img {
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        .navbar-brand {
+            margin-left: 10rem;
+            left: 0;
+        }
+
+        .navbar {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        #navbar-container {
+            min-width: 100% !important;
+            padding-left: 0;
+            padding-right: 0;
+            display: block;
+        }
+
+        .col-fill-8 {
+            width: 66%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+        }
+
+        img + em{
+            font-size: 0.8em;
+            display: block;
+            text-align: center;
+        }
+
+        #markdown img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 70%;
+        }
+
+        .navbar-toggler i {
+            color: #EEEEEE;
+        }
+
+        .author {
+            height: 10em;
+        }
+
+        .author-container {
+            margin-right: 0;
+        }
+
+        .author-info {
+            border: 1em;
+            border-color: #999999;
+        }
+
+        #content {
+            margin-top: 55vh;
+            color: #FFFFFF;
+        }
+
+        #markdown {
+            margin-top: 2em;
+            font-family: "Roboto Light";
+            text-align: justify;
+        }
+
+        #markdown p {
+            text-align: justify;
+            font-size: 1.05rem;
+        }
+
+        #markdown p:first-child:first-letter {
+            float: left;
+            font-size: 3em;
+            margin-right: 0.25rem;
+            margin-top: 0.5rem;
+            font-family: "Libre Baskerville";
+        }
+
+        h1 {
+            font-family: "Libre Baskerville";
+        }
+        h2 {
+            font-family: "Libre Baskerville";
+        }
+        h3 {
+            font-family: "Libre Baskerville";
+        }
+        h4 {
+            font-family: "Libre Baskerville";
+        }
+        h5 {
+            font-family: "Libre Baskerville";
+        }
+        h6 {
+            font-family: "Libre Baskerville";
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header-custom">
+        <div class="container" id="navbar-container">
+            <nav class="navbar navbar-expand-md">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../static/img/logo_black.png" height="30" alt="The Timeless Compass" id="navbar-img">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav3" aria-controls="navbarNav3" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav3">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html"><strong>Home</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../about.html"><strong>About</strong></a>
+                        </li>
+                    </ul>
+                    <div class="dropdown">
+                        <a id="categories" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"><strong>Categories</strong></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-menu-item">
+                                <a href="../construction.html">Politics and Current Affairs</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="../construction.html">Lifestyle</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="../construction.html">Pop Culture</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="../construction.html">Literature and Philosophy</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="../construction.html">Regions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 pl-0 pr-0 cover">
+                <img alt="image" class="img-fluid cover-img mt-1" src="../static/img/masquerade/cover.jpg">
+                <div class="cover-text">
+                    Secrets of The Masquarade
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col col-md-8 text-left" id="markdown">
+The Venetian Carnival is easily the most famous of all Italian
+carnivals, and is one of the most prominent carnivals of all time. It
+has been traced back to 1162 and had taken place continuously until it
+was banned in 1797. However, it was brought back in 1979 as part of the
+Italian government’s efforts to celebrate Venetian tradition and
+history.
+
+The carnival has been referred to a “season of excess, riot and social
+inversion”, due to the many extravagant, decadent and sinful activities
+that took place during the carnival. So what exactly were the types of
+activities that occurred at this carnival?
+
+![](../static/img/masquerade/media/image5.png)
+*Carnevale di Venezia*
+
+#### Bull-baiting
+
+Bull-baiting, or *cacce dei tori*, was one of the more grandiose events
+of the carnival. In Piazza San Marco, the largest square in Venice
+located in front of the Doge’s (chief magistrate and most senior leader
+of the Venetian republic) palace, as many as a hundred bulls were
+released at once into the piazza. Afterwards, an “unmerciful” number of
+dogs were set loose to maul and attack the bulls. Supposedly, Corsican
+dogs, known to have been the fiercest breed in Italy, were bred
+specifically for the sport.
+
+![](../static/img/masquerade/media/image6.png)
+*Cacce dei tori in Piazza San Marco*
+
+Bull-baiting was an expensive amusement for the Venetian aristocracy,
+especially the royalty, who were annual organisers of the event during
+the carnival.
+
+Interestingly, bull-baiting in Venice was treated as a festive event
+with a “high degree of emphasis on ritual, fancy dress, and athletic
+dexterity”. This was, however, a distinct contrast compared to what
+bull-baiting represented in other Italian states, where the peasants,
+who were symbolised by the dogs, were meant to rise up against the
+oppressive aristocrat, who were symbolised by the bull.
+
+#### Gambling
+
+The world’s first public gambling house, also known as *Il Ridotto*,
+originated from Venice in 1638. Built inside a wing of Palazzo Dandolo,
+it was highly frequented during the Venetian Carnival. Sanctioned by the
+government to control public gambling, it was open to all but
+discriminated against peasants and the middle-class by requiring players
+to wear three-cornered hats and masks, which were unaffordable to most.
+This meant that they had to find alternatives. Although gambling (with
+stakes) outside of the Ridotto was considered illegal, closed gambling
+clubs were popular with the less wealthy.
+
+![](../static/img/masquerade/media/image4.png)
+*A gambling scene from Carlo Goldoni's play "Le Donne Gelose"*
+
+With Venice being one of the only (and likely the first) locations to
+offer gambling on a large and public scale, gambling became one of the
+biggest attractions for tourists. In particular, young men on their
+coming-of-age Grand Tour were known to make Venice a necessary pleasure
+stop.
+
+Despite being more famed for its elaborate masks and luxurious balls,
+the Carnevale di Venezia had many more activities and traditions that
+set it apart from any other festival in Europe. From gruesome and dark
+activities like bull-baiting to glamorous and excessive gambling, the
+carnival is said to be representative of an entertaining play, in which
+the people donned masks and became anonymous actors, partaking in
+indulgences and vices that were too fantastical to occur in ‘real-life’,
+when the curtains came down and their masks peeled off.
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <hr>
+    </div>
+    <!--<section class="fdb-block pt-3 author-info">
+        <div class="container author-info">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-2"></div>
+                <div class="col-3 mt-4 mt-md-0 ml-auto mr-0 mr-md-0 author-container">
+                    <img alt="image" class="img-fluid author" src="../static/img/morris.jpg"/>
+                </div>
+                <div class="col-5">
+                    <p class="text-h3"><strong>Morris Yang</strong>&nbsp; &nbsp;&nbsp;<em>Writer</em></p>
+                    <small>
+                        Morris is a Junior College student who simply cannot stop thinking about what it means to think. (He says this not to posture himself intellectually.) Sit him down to discuss politics, or how we view and consume current affairs, or popular culture, or great literary works, or film, or philosophy, and he'll treat you to coffee. He also enjoys great music (right now it's his Spotify playlist, as will always be). The Timeless Compass, he thinks, provides a great opportunity to express his views and develop them in response to what his esteemed readers think.
+
+                        Contact: morrisycy@gmail.com
+                    </small>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+    </section>-->
+    <br>
+    <footer class="fdb-block footer-small">
+        <div class="container">
+            <div class="row text-center pb-0">
+                <div class="col">
+                    <p class="mb-0">&copy; 2018 The Timeless Compass. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

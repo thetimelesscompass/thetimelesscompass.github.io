@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- <link rel="stylesheet" type="text/css" href="static/css/theme.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="static/css/custom.css" /> -->
+    <!-- Compass by Optimus Prime from the Noun Project -->
+    <link type="text/css" rel="stylesheet" href="../static/css/froala_blocks.css">
+    <!--<link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet"> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/js/try.js"></script>
+    <script type="text/javascript" src="../static/js/Markdown.Converter.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../static/css/fonts/fonts.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto+Light" rel="stylesheet">
+    <script>
+
+        $(document).ready(function() {
+            var txt = $("#markdown").html();
+            var converter = new Markdown.Converter();
+            var htmlContent = converter.makeHtml(txt);
+            $('#markdown').html(htmlContent);
+            console.log("Success");
+        })
+    </script>
+
+    <style>
+
+        body {
+            font-family: 'Open Sans Condensed';
+        }
+
+        .block {
+            height: 20rem;
+            font-size: 1.5em;
+            padding-left: 0;
+            padding-right: 0;
+            // position: relative;
+            color: white;
+        }
+
+        .block-text {
+            padding-left: 0.5em;
+            padding-right:0.5em;
+            bottom: 0em;
+            font-family: 'Open Sans Condensed';
+            // position: absolute;
+            color: black;
+            // background-color: rgba(0, 0, 0, 0.5);
+            height: 5em;
+            width: 100%;
+        }
+
+        .cover {
+            position: relative;
+            padding-left: 10rem;
+            padding-right: 10rem;
+            color: black;
+            margin-bottom: 1em;
+            background-color: white !important;
+        }
+
+        .cover-text {
+            bottom: 0em;
+            position: absolute;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: auto; /* magic number */
+            right: 10rem;
+            padding-left: 1em;
+            left: 10rem;
+
+            font-size: 2em;
+            height: 3em;
+        }
+
+        .dark-text {
+            color: #000;
+        }
+
+        .cover-img {
+            object-fit: cover;
+            width: 100%;
+            height: 30rem;
+            padding-left: 10rem;
+            padding-right: 10rem;
+        }
+
+        .block-img {
+            object-fit: cover;
+            width: 100%;
+            height: 60%;
+        }
+
+        .wrapper {
+            margin-top: 5.25rem; /* magic number, do something legit later */
+            bottom: 40%;
+        }
+
+        #big-circle-thing {
+            margin: auto;
+            margin-top: 5%;
+            height: 90%;
+            width: 90%;
+            border-radius: 100%;
+            background-color:#ffffff;
+            font-size: 3em;
+            padding-top: 35%;
+            color: #000000;
+            left: auto;
+            right: auto;
+        }
+
+        #circle-wrapper {
+            // margin-left: 0em;
+            max-height: 100%;
+            background: repeating-linear-gradient(
+                45deg,
+                #333,
+                #333 5px,
+                #222 5px,
+                #222 10px
+            );
+        }
+
+        #cent {
+            border-color: #000000;
+            border-left: 3px;
+            border-right: 3px;
+            color: black;
+            font-size: 2em;
+            border: 1px !important;
+        }
+
+        #about {
+            background: repeating-linear-gradient(
+                45deg,
+                #606dbc,
+                #606dbc 10px,
+                #465298 10px,
+                #465298 20px
+            );
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            background-color: ;
+            // border-radius: 0.5em;
+        }
+
+        .dropdown-menu-item {
+            margin-left: 1em;
+            margin-right: 1em;
+            margin-bottom: 1em;
+        }
+
+        .dropdown-menu-item a:hover {
+            text-decoration: none;
+        }
+
+        .dropdown a{
+            color: black !important;
+        }
+
+        .content-row {
+            padding-left: 10rem;
+            padding-right: 10rem;
+        }
+
+        .block-intro {
+            font-size: 1rem;
+        }
+
+        .header-custom {
+            margin-bottom: 1.5em;
+            font-size: 1.25em;
+            margin-top: 1.5em;
+        }
+
+        #navbarNav3 {
+            margin-right: 10rem;
+        }
+
+        #navbar-img {
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        .navbar-brand {
+            margin-left: 10rem;
+            left: 0;
+        }
+
+        .navbar {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        #navbar-container {
+            min-width: 100% !important;
+            padding-left: 0;
+            padding-right: 0;
+            display: block;
+        }
+
+        .col-fill-8 {
+            width: 66%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+        }
+
+        img + em{
+            font-size: 0.8em;
+            display: block;
+            text-align: center;
+        }
+
+        #markdown img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 70%;
+        }
+
+        .navbar-toggler i {
+            color: #EEEEEE;
+        }
+
+        .author {
+            height: 10em;
+        }
+
+        .author-container {
+            margin-right: 0;
+        }
+
+        .author-info {
+            border: 1em;
+            border-color: #999999;
+        }
+
+        #content {
+            margin-top: 55vh;
+            color: #FFFFFF;
+        }
+
+        #markdown {
+            margin-top: 2em;
+            font-family: "Roboto Light";
+            text-align: justify;
+        }
+
+        #markdown p {
+            text-align: justify;
+            font-size: 1.05rem;
+        }
+
+        #markdown p:first-child:first-letter {
+            float: left;
+            font-size: 3em;
+            margin-right: 0.25rem;
+            margin-top: 0.5rem;
+            font-family: "Libre Baskerville";
+        }
+
+        h1 {
+            font-family: "Libre Baskerville";
+        }
+        h2 {
+            font-family: "Libre Baskerville";
+        }
+        h3 {
+            font-family: "Libre Baskerville";
+        }
+        h4 {
+            font-family: "Libre Baskerville";
+        }
+        h5 {
+            font-family: "Libre Baskerville";
+        }
+        h6 {
+            font-family: "Libre Baskerville";
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header-custom">
+        <div class="container" id="navbar-container">
+            <nav class="navbar navbar-expand-md">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../static/img/logo_black.png" height="30" alt="The Timeless Compass" id="navbar-img">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav3" aria-controls="navbarNav3" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav3">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html"><strong>Home</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../about.html"><strong>About</strong></a>
+                        </li>
+                    </ul>
+                    <div class="dropdown">
+                        <a id="categories" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"><strong>Categories</strong></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-menu-item">
+                                <a href="../construction.html">Politics and Current Affairs</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="../construction.html">Lifestyle</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="../construction.html">Pop Culture</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="../construction.html">Literature and Philosophy</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="../construction.html">Regions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 pl-0 pr-0 cover">
+                <img alt="image" class="img-fluid cover-img mt-1" src="../static/img/alexander_roshan/cover.jpg">
+                <div class="cover-text">
+                    History Repeats Itself: Han-Minority Dual Structure in Contemporary Chinese Society
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col col-md-8 text-left" id="markdown">
+The Xinjiang Riots. The Kunming Stabbings. The multiple instances of
+self-immolation in Tibet.
+
+These are examples of incidents that bring scrutiny upon the handling of
+ethnic issues by the mainland Chinese government. Since the founding of
+the People’s Republic of China (PRC) in 1949, the Chinese Communist
+Party (CCP) has continued to incur the ire of the international
+community for its alleged human rights violations. Beijing’s hard-lined
+pursuit of suppression amongst ethnic minorities has additionally served
+to exacerbate this backlash.
+
+However, we must not overlook the historical roots of the Han-ethnic
+tensions that lie within millenniums of conflict between Chinese
+dynasties and various historical ethnic groups such as the Huns, Turks,
+Tartars, Tibetans, to name a few. One of the most significant events
+that highlights the struggles between ethnic groups in China and the
+central government is the An Lushan (or An-Shi) Rebellion (安史之乱)
+(755-763) during the Tang Dynasty (618-907), which continues to send
+ripples through present-day Chinese policies.
+
+![](../static//img/alexander_roshan/media/image7.jpg)
+*The Silk Road brought wealth and prosperity to the Tang Dynasty, as
+well as an influx of foreign culture.*
+
+For individuals with basic knowledge of Chinese history, the Tang
+Dynasty would likely be synonymous with prosperity, the Silk Road and
+Chinese Poems (唐诗). While the periods of Early Tang and the
+flourishing High Tang before the Rebellion were characterised by the
+great influx of foreign culture through the Silk Road, these periods of
+openness have been recognised by future historians as a portent of
+subsequent conflicts.
+
+The An Lushan Rebellion was an uprising led by General An Lushan
+(安禄山), a Turkic-Sogdian military governor of Fanyang Province (an
+area near present-day Beijing). Although the uprising was eventually
+suppressed by the Tang Dynasty, the death toll was an estimated 13 to 36
+million people, making it one of the ten deadliest conflicts in human
+history by body count, and the deadliest in terms of the percentage of
+casualties to the total global population, given the global population
+of approximately 200 million during this period.
+
+![](../static//img/alexander_roshan/media/image9.jpg)
+*The flight of Emperor Xuanzong from the capital Chang’an (present-day
+Xi’an). The imperial court was evacuated to the Southwestern province of
+Sichuan, where the Emperor abdicated and his son, Emperor Suzong, took
+over the throne.*
+
+The revolt has been unanimously regarded by historians as a watershed in
+Chinese history; it marked the end of the flourishing High Tang period
+and the commencement of Middle Tang, which was plagued with a series of
+smaller-scale revolts that brought the Tang Dynasty into steady decline.
+
+However, it must be understood that the events in the Tang Dynasty were
+manifestations of an increasingly xenophobic society, due to centuries
+of the spread of *hu* (胡, foreign or more condescendingly, barbarian)
+culture into northern China in the Six Dynasties (222-589). In a broad
+sense, *hu* in this context was a term coined by the Han Chinese to
+refer to the non-Han races such as the Turks, Sogdians, Tibetans, Arabs,
+Huns, Khitans, etc. The derogatory meaning of “barbarian” originates
+from the self-perceived cultural superiority of the Han Chinese. While
+the existing xenophobia compelled ethnic rulers to adopt Han customs,
+language and names to maintain control over the Han-majority population,
+it also pressured ethnic minorities in the population to do the same and
+identify more with the dominant Han people, to avoid ostracisation.
+
+In fact, the Imperial Yang family of the short-lived Sui Dynasty
+(581-618) and the Li family of the subsequent Tang Dynasty were of
+partial *Xianbei* descent, but they were rapidly sinicised through the
+adoption of Han Chinese traditions, Imperial court customs as well as
+Chinese language and characters. The *Xianbeis* were proto-Mongols and
+one of the major nomadic groups in Northern China. They played a
+significant role in the politics of Medieval China, as various sinicised
+Xianbei tribes established six significant empires of their own in the
+period of the Six Dynasties. Despite the resultant loss of *Xianbei*
+culture, the integration of the imperial Yang and Li families into the
+Han society enabled them to gain recognition among the Han population.
+Today, the Sui and Tang Dynasties are recognised in China as dynasties
+of the Han people.
+
+On top of the existing xenophobia, two prominent reforms in the Tang
+Dynasty laid the foundation of revolt: the semi-professionalisation of
+the army which resulted in the ceding of military power to the
+*jiedushi* (节度使, or regional military leaders), and the relocation of
+large populations of *hu* people into modern-day Hebei province, a
+phenomenon also known as *huhua* (胡化), or barbarianisation. Military
+commanders with minority ancestry (such as An Lushan) were promoted to
+key positions during the gradual decentralisation of power from the
+Imperial government. These regional commanders could wield as many as
+hundreds of thousands of troops, and could operate as alternative
+political centres apart from the central government.
+
+![](../static//img/alexander_roshan/media/image8.png)
+*Map of Rebellion. It took eight years and three generation of Emperors
+to suppress the Rebellion, which severely fractured and weakened the
+Tang Dynasty.*
+
+After the devastation brought about by the rebellion, Imperial
+historians characterised the conflict as a foreign invasion of the *hu*
+people subverting the Chinese regime, owing to An Lushan’s ethnic
+background. Modern historians, however, attribute it to a mixture of
+factors including the inherent structural weaknesses of the Tang regime,
+plagued with ineffective policies and corruption.
+
+However, both schools of thought endorse the prospect of ethnic
+minorities posing a potential threat to the central Chinese regimes once
+their power goes unchecked. This wariness against ethnic minorities was
+fostered by the constant invasions by nomadic tribes from the North and
+the West, as well as the resultant xenophobia among the Han Chinese.
+Another crucial factor was the Tang Dynasty’s openness policy towards
+foreigners and minorities, as the sudden influx of foreigners and *hu*
+people into regions of China (such as Hebei) had upset the local ethnic
+balance and diluted the predominant Han culture with foreign ones, while
+creating drastically different spheres of political and cultural
+influence from the capital.
+
+Ineffective governance was also an important factor, as the weakening of
+the central government and factionalisation of authority led to its
+inability to counter the growing influence of regional military leaders,
+making conditions favourable for the emergence of rebels. After the
+Rebellion was contained, the influence of the central bureaucracy was
+drastically reduced as the Tang Dynasty’s desire for peace also resulted
+in the pardoning of many rebels. The emperor’s inability to regain
+control over all the regional warlords made him a puppet, set to do the
+bidding of the strongest garrison. For the next 144 years, the Tang
+ceased to exist in all but name, a far cry from its former days of
+glory.
+
+Yet, the emergence of minority groups as a potential destabilising
+factor in Chinese politics did not conclude at the end of the Tang
+Dynasty. In fact, this phenomenon observed during the An Lushan
+Rebellion continues to serve as an impetus in shaping contemporary
+Chinese ethnic policies.
+
+The aftermath of the Rebellion made subsequent dynasties and governments
+realise the importance of grappling with the delicate balance of
+Han-minority relationships, while maintaining a strong central
+government to prevent factionalisation of the military. In present-day
+China under the Communist Party, a Han vs. minority “dual structure” has
+been maintained due to the strong historical roots of ethnic tensions.
+Although not as extreme as the divide-and-rule strategy between the Han
+Chinese and minorities formulated by the Manchus in the Qing Dynasty,
+the political structure is still centred around maintaining ethnic fault
+lines and limiting ethnic integration to rigid conformance to the
+dominant Han society.
+
+These contemporary Chinese concepts of ethnicity and the relevant ethnic
+policies originate from the Chinese definition of “nation” (*minzu
+民族*). After the Xinhai Revolution in 1911, revolutionary leader
+Sun Yat-sen embraced liberal ideals and proposed the founding of a
+“republic of five groups”. Sun advocated for national unification, which
+consisted of the “joining of the various groups of Han, Manchu, Mongol,
+Hui Muslim and Tibetan into one nation.” The idea of all ethnic groups
+unifying as one Chinese nation (*Zhonghua minzu 中华民族*) was
+emphasised, which would re-establish China as the modern form of
+“nation-state”. During the Republic of China (1912-1949), both the
+Peking government (1912-1928) and Chiang Kai-Shek’s Nanjing Nationalist
+Government (1928-1949) strongly insisted that there was only one
+“nation” in China. They did not recognise other minority groups as
+“nations” or “nationalities”, but only as lineage branches (ethnic
+minorities) of the Chinese nation.
+
+![](../static//img/alexander_roshan/media/image12.png)
+*“Five Races Under one Union” — The flag of the early Republic of China
+(1912-1928). The five colours represent Han Chinese, Manchu, Mongol, Hui
+Muslims and Tibetan respectively.*
+
+Unlike the Republic of China (1912-1949), The People’s Republic of China
+(PRC) adopted a different nationality policy as it espoused Stalin’s
+theory and the Soviet model of “nationality formation”. The PRC
+officially recognised 56 different nationalities in China, which became
+the foundation of developing policies towards ethnic minorities. In
+contrast to its predecessor, the PRC established itself as a
+“multinationality republic” (*duo minzu guojia 多民族国家*). Under this
+new structure, the term *minzu* has been applied on two levels: a
+unified Chinese nation (*zhonghua minzu)* and the 56 nationalities
+within it (Han Chinese and 55 minority groups). Autonomous regions,
+prefectures, counties and towns have been established starting from the
+1950s, and the Chinese government has implemented a series of
+affirmative action policies for minority groups, including the exemption
+from the one-child policy, bonus points awarded at university entrance
+examinations, and financial subsidies. Although this new system has
+given ethnic minorities systemic preferential protection, the
+entitlement to these bonuses is purely based on race and identity
+instead of personal merit or status. This has made the Han Chinese *—*
+who do not enjoy these benefits *—* feel discriminated against, since
+they would be permanently barred from the provision of the
+aforementioned welfare perks despite constituting the bulk of the
+Chinese population.
+
+![](../static//img/alexander_roshan/media/image10.jpg)
+*Under the CCP’s new structure of nationalities, China has now
+officially recognised 56 different ethnic groups. Yet, recognition from
+the state belies the actual condition of ethnic relations in modern
+China.*
+
+This divide has currently manifested in the minority groups’ recognition
+of their distinct identity from the Han majority, while the Han Chinese
+now perceive themselves to be an ostracised group. In the light of the
+terrorist attacks by the East Turkestan Islamic Movement (ETIM) in
+Xinjiang Uyghur Autonomous Region and political movements led by the
+Tibetan Government in Exile in India, the Chinese government has been
+identifying and denouncing foreign intervention as the main source of
+ethnic instability, while turning public sentiment against the
+minorities instead of the government’s own structural shortcomings. This
+has heightened tensions and misunderstandings, with recent incidents of
+self-immolation of Tibetans (there have been 148 cases since February
+2009) sparking little public sympathy among the Han Chinese. Some
+members of the Han Chinese community have even displayed public anger by
+accusing minorities of being “ungrateful” towards the generous benefits
+they have been receiving from the government.
+
+Under the “dual structure”,
+students from minority groups receive education in their own language
+and enrol in *minzu* universities catered to the minorities, with little
+involvement and interaction with Han Chinese in their education system,
+who generally display little interest in the affairs of the minorities.
+This gradual ethnic segregation in the Chinese school system and its
+influence in the larger society has therefore resulted in an environment
+that is less than conducive for economic development and the fostering
+of knowledge exchange between the Han society and the minorities, as the
+latter tends to hold lower proficiency levels in Mandarin Chinese and
+thus encounter difficulties in finding jobs and securing a livelihood.
+This leads to a lack of mutual cultural understanding, thereby posing
+challenges for minorities to better integrate into society, while
+simultaneously limiting their access to economic opportunities. The
+“dual structure” manifesting in a set of concrete policies and unequal
+treatment has thus aggravated the divide along ethnic lines and diluted
+the Chinese people’s ethnic consciousness of their own nation.
+
+In terms of governance, the CCP still employs pro-government ethnic
+minority leaders in administrative positions, while maintaining a strong
+governance as a central political authority. Additionally, it has been
+consolidating its leadership through multiple hard-line anti-corruption
+campaigns and reforming the military, while establishing a centralised
+“Xi Jingping-core” leadership — something the Tang Dynasty could not
+achieve. The series of preferential treatment and the acknowledgement of
+the 56 nationalities may be perceived as a strategy by the Chinese
+government to pacify the minority groups, while the establishment of the
+separate sphere for minorities ensures adequate opportunities provided
+for them in their own communities. However, these structures have
+inevitably alienated the minority groups from the mainstream Han society
+and politics. Ethnic representation in the government is made
+proportional to population size, and it is increasingly difficult for
+politicians of minority backgrounds to be raised to positions of power
+compared to their Han counterparts. While the existing structure ensures
+minority involvement in politics is kept to a minimum and a
+Han-dominated political sphere is maintained, it has sparked dissent
+among minorities for under-representation.
+
+![](../static//img/alexander_roshan/media/image3.jpg)
+*History repeats itself: With Chinese president Xi Jinping pursuing
+hard-line reforms within the party and revamping the central leadership,
+power has been increasingly centralised around the Han-dominated party
+leadership.*
+
+Thus, despite the recognition given to the minority groups under the
+current system, its shortcomings have amplified the underlying
+inter-racial fault lines in modern Chinese society, such as the multiple
+interpretations of the term *“minzu”*, the different treatment towards
+the Han Chinese and minorities, and the institutionalised segregation in
+education and availability of opportunities in the social, economic and
+political spheres. All of these have perpetuated a sense of ethnic
+segregation and the dilution of a common Chinese national identity.
+
+Amidst calls from critics and political activists for reviews and
+reforms of the current system, we must not forget that the legacy of the
+An Lushan Rebellion is a watershed event in Chinese history and a unique
+cultural symbol. Crucially, the Rebellion, which was a military and
+political catastrophe for the Chinese empire, has continued to play a
+crucial role in shaping the mindset of current Chinese leaders. It has
+moulded an increasingly centralised leadership and reinforcing the
+necessity of maintaining greater control over the political and military
+authority of minorities. The recent cases of dissatisfaction and unrest
+among the Tibetans and Uyghurs can be mainly attributed to the
+ineffectiveness of CCP’s dual structure in the case when both ethnic
+groups have assimilated into the Han society to a lesser extent than
+their ethnic counterparts. With cultures that are distinctly different
+from that of the Han Chinese, they have found it harder to integrate
+under the dual structure, which had not only failed to narrow the
+Han-minority rift significantly, but also instilled a sense of unequal
+treatment and subjugation among them.
+
+Nevertheless, while the political structure of China has evolved
+considerably, it continues to be pivoted on two forces acting together
+concurrently: the centrifugal force of the conflicts and tensions
+between the minorities and Han Chinese, and the centripetal force of the
+common cultural background among the Han Chinese that unites them.
+Throughout thousands of years, rulers of the historical dynasties and
+the contemporary China have been subjected to the intangible influence
+of these two forces. Thus, these forces highlight the underlying
+historical consistency of the prolonged wariness of the Han Chinese
+against minority groups, a continuity that transcends time and ideology,
+undergirding the attitude of Chinese leaders towards minorities till
+this day.
+
+In retrospect, as the historical roots of Han-minority tensions lie
+entrenched in the Chinese society, any possibility of the dismantling of
+the existing Han vs. minorities “dual structure” remains slim.
+Practically speaking, altering the nationalist ideology that has been
+implemented for more than 60 years is no easy task. With the recent
+reforms by President Xi aiming to consolidate the central leadership and
+party ideology and more importantly, the unseen forces of history as an
+invisible hand, rewriting the nationalist ideology entrenched in the
+Chinese government’s policies will be a difficult task, if not an
+impossible one.
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <hr>
+    </div>
+    <!--<section class="fdb-block pt-3 author-info">
+        <div class="container author-info">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-2"></div>
+                <div class="col-3 mt-4 mt-md-0 ml-auto mr-0 mr-md-0 author-container">
+                    <img alt="image" class="img-fluid author" src="../static/img/morris.jpg"/>
+                </div>
+                <div class="col-5">
+                    <p class="text-h3"><strong>Morris Yang</strong>&nbsp; &nbsp;&nbsp;<em>Writer</em></p>
+                    <small>
+                        Morris is a Junior College student who simply cannot stop thinking about what it means to think. (He says this not to posture himself intellectually.) Sit him down to discuss politics, or how we view and consume current affairs, or popular culture, or great literary works, or film, or philosophy, and he'll treat you to coffee. He also enjoys great music (right now it's his Spotify playlist, as will always be). The Timeless Compass, he thinks, provides a great opportunity to express his views and develop them in response to what his esteemed readers think.
+
+                        Contact: morrisycy@gmail.com
+                    </small>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+    </section>-->
+    <br>
+    <footer class="fdb-block footer-small">
+        <div class="container">
+            <div class="row text-center pb-0">
+                <div class="col">
+                    <p class="mb-0">&copy; 2018 The Timeless Compass. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

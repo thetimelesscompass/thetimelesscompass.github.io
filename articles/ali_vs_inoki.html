@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- <link rel="stylesheet" type="text/css" href="static/css/theme.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="static/css/custom.css" /> -->
+    <!-- Compass by Optimus Prime from the Noun Project -->
+    <link type="text/css" rel="stylesheet" href="../static/css/froala_blocks.css">
+    <!--<link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet"> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/js/try.js"></script>
+    <script type="text/javascript" src="../static/js/Markdown.Converter.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../static/css/fonts/fonts.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto+Light" rel="stylesheet">
+     <script type="text/javascript" src="https://cdn.rawgit.com/showdownjs/showdown/1.8.5/dist/showdown.min.js"></script>
+    <script>
+
+        $(document).ready(function() {
+            var txt = $("#markdown").html();
+            var converter = new showdown.Converter();
+            var htmlContent = converter.makeHtml(txt);
+            $('#markdown').html(htmlContent);
+            console.log("Success");
+        })
+    </script>
+
+    <style>
+
+        body {
+            font-family: 'Open Sans Condensed';
+        }
+
+        .block {
+            height: 20rem;
+            font-size: 1.5em;
+            padding-left: 0;
+            padding-right: 0;
+            // position: relative;
+            color: white;
+        }
+
+        .block-text {
+            padding-left: 0.5em;
+            padding-right:0.5em;
+            bottom: 0em;
+            font-family: 'Open Sans Condensed';
+            // position: absolute;
+            color: black;
+            // background-color: rgba(0, 0, 0, 0.5);
+            height: 5em;
+            width: 100%;
+        }
+
+        .cover {
+            position: relative;
+            padding-left: 10rem;
+            padding-right: 10rem;
+            color: black;
+            margin-bottom: 1em;
+            background-color: white !important;
+        }
+
+        .cover-text {
+            bottom: 0em;
+            position: absolute;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: auto; /* magic number */
+            right: 10rem;
+            padding-left: 1em;
+            left: 10rem;
+
+            font-size: 2em;
+            height: 3em;
+        }
+
+        .dark-text {
+            color: #000;
+        }
+
+        .cover-img {
+            object-fit: cover;
+            width: 100%;
+            height: 30rem;
+            padding-left: 10rem;
+            padding-right: 10rem;
+        }
+
+        .block-img {
+            object-fit: cover;
+            width: 100%;
+            height: 60%;
+        }
+
+        .wrapper {
+            margin-top: 5.25rem; /* magic number, do something legit later */
+            bottom: 40%;
+        }
+
+        #big-circle-thing {
+            margin: auto;
+            margin-top: 5%;
+            height: 90%;
+            width: 90%;
+            border-radius: 100%;
+            background-color:#ffffff;
+            font-size: 3em;
+            padding-top: 35%;
+            color: #000000;
+            left: auto;
+            right: auto;
+        }
+
+        #circle-wrapper {
+            // margin-left: 0em;
+            max-height: 100%;
+            background: repeating-linear-gradient(
+                45deg,
+                #333,
+                #333 5px,
+                #222 5px,
+                #222 10px
+            );
+        }
+
+        #cent {
+            border-color: #000000;
+            border-left: 3px;
+            border-right: 3px;
+            color: black;
+            font-size: 2em;
+            border: 1px !important;
+        }
+
+        #about {
+            background: repeating-linear-gradient(
+                45deg,
+                #606dbc,
+                #606dbc 10px,
+                #465298 10px,
+                #465298 20px
+            );
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            background-color: ;
+            // border-radius: 0.5em;
+        }
+
+        .dropdown-menu-item {
+            margin-left: 1em;
+            margin-right: 1em;
+            margin-bottom: 1em;
+        }
+
+        .dropdown-menu-item a:hover {
+            text-decoration: none;
+        }
+
+        .dropdown a{
+            color: black !important;
+        }
+
+        .content-row {
+            padding-left: 10rem;
+            padding-right: 10rem;
+        }
+
+        .block-intro {
+            font-size: 1rem;
+        }
+
+        .header-custom {
+            margin-bottom: 1.5em;
+            font-size: 1.25em;
+            margin-top: 1.5em;
+        }
+
+        #navbarNav3 {
+            margin-right: 10rem;
+        }
+
+        #navbar-img {
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        .navbar-brand {
+            margin-left: 10rem;
+            left: 0;
+        }
+
+        .navbar {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        #navbar-container {
+            min-width: 100% !important;
+            padding-left: 0;
+            padding-right: 0;
+            display: block;
+        }
+
+        .col-fill-8 {
+            width: 66%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+        }
+
+        img + em{
+            font-size: 0.8em;
+            display: block;
+            text-align: center;
+        }
+
+        #markdown img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 70%;
+        }
+
+        .navbar-toggler i {
+            color: #EEEEEE;
+        }
+
+        .author {
+            height: 10em;
+        }
+
+        .author-container {
+            margin-right: 0;
+        }
+
+        .author-info {
+            border: 1em;
+            border-color: #999999;
+        }
+
+        #content {
+            margin-top: 55vh;
+            color: #FFFFFF;
+        }
+
+        #markdown {
+            margin-top: 2em;
+            font-family: "Roboto Light";
+            text-align: justify;
+        }
+
+        #markdown p {
+            text-align: justify;
+            font-size: 1.05rem;
+        }
+
+        #markdown p:first-child:first-letter {
+            float: left;
+            font-size: 3em;
+            margin-right: 0.25rem;
+            margin-top: 0.5rem;
+            font-family: "Libre Baskerville";
+        }
+
+        h1 {
+            font-family: "Libre Baskerville";
+        }
+        h2 {
+            font-family: "Libre Baskerville";
+        }
+        h3 {
+            font-family: "Libre Baskerville";
+        }
+        h4 {
+            font-family: "Libre Baskerville";
+        }
+        h5 {
+            font-family: "Libre Baskerville";
+        }
+        h6 {
+            font-family: "Libre Baskerville";
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header-custom">
+        <div class="container" id="navbar-container">
+            <nav class="navbar navbar-expand-md">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../static/img/logo_black.png" height="30" alt="The Timeless Compass" id="navbar-img">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav3" aria-controls="navbarNav3" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav3">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html"><strong>Home</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../about.html"><strong>About</strong></a>
+                        </li>
+                    </ul>
+                    <div class="dropdown">
+                        <a id="categories" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"><strong>Categories</strong></a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-menu-item">
+                                <a href="../construction.html">Politics and Current Affairs</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="../construction.html">Lifestyle</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="../construction.html">Pop Culture</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="../construction.html">Literature and Philosophy</a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="../construction.html">Regions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 pl-0 pr-0 cover">
+                <img alt="image" class="img-fluid cover-img mt-1" src="../static/img/ali_vs_inoki/cover.jpg">
+                <div class="cover-text">
+                    The Bee and the Butterfly: The Politics of the Ali vs. Inoki Fight
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col col-md-8 text-left" id="markdown">
+
+June 26th, 1976: The atmosphere in the historic Nippon Budokan Arena in
+Tokyo, Japan, was simply electric: the air was terse and supercharged,
+with chants of “*Boma-ye!* *Boma-ye!*” permeating through the halls
+of the arena. Atop the *tatami* that once served as the proving
+ground of budding *judokas* during the 1964 Tokyo Olympics was a
+boxing ring that, in a few minutes’ time, would host an all-out war
+between two juggernauts. The rest of the world waited with bated breath
+for the starting bell to ring.
+
+The 1976 mixed-rules bout in Tokyo between venerated boxer Muhammad Ali,
+and internationally-acclaimed professional wrestler and hometown hero
+Antonio Inoki, is often regarded by combat sports pundits as a sparkplug
+for the evolution of mixed-rules, no-holds-barred combat, which would
+eventually pave the way for the genesis of modern mixed martial arts
+(MMA). The fight itself was said to be lethargic and uninteresting, and
+the event, as a whole, was universally panned by critics and the public
+alike.
+
+![](../static//img/ali_vs_inoki/media/image15.png)
+*Muhammad Ali taunting Antonio Inoki at a press conference in typical fashion.*
+
+The fight generated flak, however, in more ways than just one, primarily
+due to the two personalities involved: Both Ali and Inoki had
+controversial political slants that placed them at the cusp of much
+broader global civil rights revolutions that were taking place at the
+time: Ali pushed forth a very hardlined agenda in promoting a
+quintessential African-American identity that was predicated on the
+segregation of blacks and whites in America; on the other hand, Inoki
+adopted a concessionary approach to diplomacy, advocating for the use of
+sports as a means of achieving the ultimate *tour de force* of global
+unity and equality between Man. The prominence of these two men in their
+respective disciplines played a monumental part in propagating their
+ideals of empowerment and civil rights globally, the effects of which
+are very evident even till today.
+
+#### PART 1: MOERU TOUKON
+
+When it came to societal conservatism, Antonio Inoki was always
+considered an anomaly: in a post-war Japanese society that was
+notoriously isolationist towards foreigners, or *gaijin*, Inoki
+warmly welcomed their presence and pegged himself as a global citizen
+throughout his career. This was a textbook example of the apple not
+falling far from the tree, as Inoki had been the most prominent disciple
+of the ‘Father of Modern *Puroresu*’, the Korean-Japanese sumo
+wrestler Rikidōzan, and had modelled his personal beliefs after those of
+his mentor’s. Due to discriminatory practices levied against ethnic
+Koreans in colonial Korea, Rikidōzan was denied the right to attain the
+rank of *yokozuna* in the sport despite his unparalleled
+proficiency, which led to his disillusionment and eventual exit from the
+sport.
+
+Following a meeting with famed Japanese-American weightlifter Harold
+Sakata, Rikidōzan was introduced to the art of professional wrestling
+which he pursued abroad in the United States, where he had the
+opportunity to work with individuals from all walks of life.
+
+![](../static//img/ali_vs_inoki/media/image10.png)
+*Rikidōzan delivers his signature Mongolian chop to his opponent during a match.*
+
+In the process, he had become a national icon, ironically, of post-war
+Japan, which was in great need of a boost in public morale following its
+humiliating defeat during World War II. Rikidōzan adopted the ideals of
+global citizenry rather faithfully through working with various
+wrestlers all over the world: whenever he was asked about his ethnicity,
+he would insist that he “didn’t know Korea nor Japan”, and that he was
+“a man of the world”.
+
+It is this exact global outlook that we see projected onto Inoki, who
+believed in the propensity of sports and sports entertainment to enact
+positive change in, and ultimately empower, communities apart from his
+own. Sporting the slogan of ‘Civil rights for *puroresu*’, Inoki used
+his long, illustrious career spent promoting his vision of what Kazuo
+Ishikawa, sports commentator and wrestling promoter, described as
+‘wrestling diplomacy’: the use of professional wrestling events as a
+means of facilitating discourse and forging of ties between nations.
+
+![](../static//img/ali_vs_inoki/media/image5.png)
+*Antonio Inoki in his prime, posing for a photo with a famed student of his, Tiger Mask.*
+
+Inoki was able to use his standing in the wrestling rather skilfully in
+this regard, seeing that it was employed in two notable instances: the
+first instance was in 1990, when Antonio Inoki successfully organised a
+professional wrestling event in pre-Gulf War Iraq as an accessory to his
+negotiation attempts with ex-dictator Saddam Hussein, with the hopes of
+freeing 41 captive Japanese nationals in the country. To the rest of the
+world, this was a shock: for the first time since Iraq had become a
+hermit nation under the iron fist of Saddam, the country was opened
+single-handedly by Inoki to the Japanese nation, which was able to
+capitalise on his global outlook as a means of developing amicable
+relationships with a belligerent Iraq.
+
+The second, and by far a more long-standing case study, is one that
+involves North Korea, to which Inoki had felt a special connection to
+due to it being the spiritual homeland of his mentor, Rikidōzan. The
+abduction of Japanese national Megumi Yokota by North Korea had set a
+sinking lid in motion for bilateral relations between North Korea and
+Japan. Such a fraying of ties, in Inoki’s opinion, had “close\[d\] the
+doors” on any possibility for communication between the two nations,
+which he was not in favour of. This prompted him to co-organise, and
+take part in, ‘Collision in Korea’, a wrestling supershow held in
+Pyongyang, North Korea, for the purposes of building up trilateral amity
+between North Korea, Japan, and the United States.
+
+![](../static//img/ali_vs_inoki/media/image16.png)
+*Antonio Inoki and the then World Championship Wrestling Heavyweight
+Champion, Ric Flair, following their main event match at ‘Collision in
+Korea’ in Pyongyang, North Korea. Inoki won the match through pinfall.*
+
+The event was wildly successful globally, generating an unparalleled
+record attendance of 190,000. This initial success was carried forth by
+Inoki well into the 2000s: he was said to have made more than 30 trips
+to North Korea to personally organise numerous wrestling festivals and
+events, much to the ire of the Japanese *Diet* (of which he was a
+member), which felt that Inoki had not been keeping the Japanese
+government abreast of his activities in North Korea. Despite opposition
+from his higher-ups, Inoki continued pursuing this autonomous form of
+diplomacy with much success.
+
+The ability of Antonio Inoki to wield his expertise in professional
+wrestling as a foothold to promote diplomacy between Japan and two of
+the most isolationist nations of his time was truly remarkable,
+especially considering how it had involved minimal governmental purview
+and was considered at that time to be a success by any measure given
+that previous attempts by global superpowers to engage these pariah
+nations were largely futile. In the realms of both politics and sports
+entertainment, Inoki truly stood out as a trendsetter for all the right
+reasons.
+
+#### PART 2: THE GREATEST OF ALL TIME
+
+On the other end of the spectrum was Muhammad Ali. Fierce, bold, and
+brash, Ali stood out as a highly-contentious figure in an *interbellum*
+American society during the crux of the Cold War, with a few personal
+demons to sort out: the notorious Jim Crow Laws that had been around
+since the late 19th century were being implemented in full-swing in
+various organs of American society, and this propagated the
+‘separate-but-equal’ illusion that had perverted the collective
+American psyche of that time. As a result, African Americans were denied
+numerous concessions and privileges that were extended to Americans of
+European descent, and were always hanging onto the lower rungs of the
+socioeconomic ladder of American society. Ali seized every single
+opportunity he had, both inside the boxing ring and out, to reverse
+these perceptions and become the collective hope and pride of an
+oppressed race.
+
+At a time when segregation permeated through the American sports scene,
+and only socialites and European Americans were permitted access to
+certain sports (most notoriously, baseball, basketball, and American
+football, among others), boxing was considered a go-to sport for budding
+African American athletes for two primary reasons: firstly, it was
+easily accessible and cheap for African Americans, who tended towards
+the lower-middle socioeconomic class of American society; secondly,
+African Americans had a long, established history of success in the
+sport, with the first African American boxing champion, George Dixon,
+being crowned as early on as 1890.
+
+![](../static//img/ali_vs_inoki/media/image4.png)
+*Ali when he first started out as an amateur boxer at 13 years of age.*
+
+It was thus expected that Ali, too, would pursue a career in boxing, and
+the circumstances under which he became a boxer were telling of the
+times as well: following a fracas with a thief who had stolen his
+bicycle, Ali, who was then 12 years old, was spurred on by a local
+African-American police officer to learn the art of boxing. Through
+years of training and an impressive 100-5-0 record in amateur boxing,
+Ali managed to establish himself in the boxing circuit, after which he
+was selected to represent America at the 1960 Olympics in Rome as a
+contender in the Light Heavyweight division. Ali, who was then fighting
+under his birth name of Cassius Clay, would go on to win the gold medal
+in the division after knocking out Zbigniew Pietrzykowski of Poland.
+This victory over a three-time European Champion set Ali on a trajectory
+of fame, fortune, and controversy as he moved into his professional
+boxing career.
+
+![](../static//img/ali_vs_inoki/media/image6.png)
+*Ali after receiving his gold medal at the 1960 Rome Olympics.*
+
+Ali’s professional career as a boxer was largely hinged on his political
+stance and the momentum he had acquired in the mainstream media due to
+his controversial style of garnering publicity: he had the habit of
+belittling his opponents before every fight, and became an instant heat
+magnet when he renounced his birth name of Cassius Clay by referring to
+it as his “slave name”, and instead adopted the name of Muhammad Ali
+following his membership of the Nation of Islam, which was, at the
+time, decried as a black supremacist organisation.
+
+Ali held on firm to his embracing of Islam and his beliefs in the
+pro-black tenets further supported by the Nation of Islam throughout his
+career. This was evidenced by his encounter with boxer Ernie Terrell,
+who referred to Ali by his birth name of Cassius Clay at a pre-fight
+press conference, much to Ali’s anger. Ali had previously renounced his
+“slave name” of Cassius Clay in favour of what he called his “free
+name”, which, when translated from Arabic, meant ‘beloved of God’. It
+was Ali’s wish that those around him would acknowledge his allegiance to
+the Islamic faith, which he viewed to be a liberating agent in his life.
+It was this firm belief in Islam that led Ali to view Terrell’s actions
+as an affront to his very being and beliefs.
+
+![](../static//img/ali_vs_inoki/media/image11.png)
+*Ali during his bout with Ernie Terrell.*
+
+Ali proceeded to refer to Terrell as an ‘Uncle Tom’ before both of
+them came to blows. During the match itself, Ali kept asking, “What’s my
+name, Uncle Tom?” to Terrell in between rounds, before going on to win
+the fight via a unanimous decision. It was then that the world first
+understood what Ali had meant when he quipped that “\[he was\] America.
+\[He was\] the part you won't recognise,” insisting that people “get
+used to \[him\].” Two things had become clear: Firstly, Ali had taken
+his place at the forefront of a growing civil rights revolution in
+American society. Secondly, he was here to stay.
+
+However, Ali’s involvement in the civil rights movement only became more
+evident during the Vietnam War, where American males were conscripted
+*en masse* to serve in Vietnam. Despite being fit for a combat vocation,
+Ali refused to participate in the draft for two key reasons: firstly, he
+believed in pacifism as advocated for in the Qur’an, and secondly, he
+conscientiously objected to the idea of African Americans having to
+serve the same nation that enforced systemic oppression against them,
+taking issue with the fact that they were required to serve even though
+“so-called Negro people in Louisville \[were\] treated like dogs and
+denied simple human rights”. This was a particularly tenuous political
+move by Ali, who, at the time, was the Heavyweight boxing champion. His
+refusal to be drafted led to him being stripped of his title, banned
+from the sport for three years, and imprisoned, which were all
+consequences he was happy to accept as long as it meant that he was
+allowed to hold firm to his personal beliefs.
+
+![](../static//img/ali_vs_inoki/media/image14.png)
+*Ali after knocking out his opponent, Sonny Liston, for the boxing
+Heavyweight Championship. He would later be stripped of this
+championship title due to his refusal to be drafted for service in the
+Vietnam War.*
+
+Ali’s refusal of the draft inspired a larger American counter-culture
+movement that helped spur a sustained objection by the American public
+to America’s participation in the Vietnam War. More specifically, his
+actions and decisions served to galvanise the African American community
+in solidarity, as more African American males and youths refused the
+draft and were subsequently imprisoned. Unbeknownst to himself, Ali had
+inspired a societal revolution that would go on to become a piece of the
+larger puzzle that was the African American civil rights movement.
+
+Even following his retirement from boxing, Ali still maintained his
+foothold as an activist, becoming a revered icon of Americana and global
+sports. He became a UN Messenger for Peace in Afghanistan in 2001
+following the September 11 attacks. His dedication to the sport of
+boxing, and his embracing of his identity as an African American at a
+time when his own country had turned his back on him, had ignited a
+spark of revolution in the American psyche of the 1960s. Even following
+his death, he remains a ray of light for the African American community
+of contemporary society.
+
+#### PART 3: RECONCILIATION
+
+The Ali-Inoki fight ended in a draw between both contestants, who were
+unable to secure a win by submission or knockout. The judges of the
+contest were also split on the decision, unable to determine a winner
+due to the lethargic, passive nature of the bout. The fans present at
+the arena were not too pleased either, and started throwing their chairs
+onto the ring, demanding that they be reimbursed for the fight.
+
+For the way it was hyped up in the media and for the vast efforts that
+were put into broadcasting the fight to 34 different countries with a
+projected total audience of 1.4 billion, the battle was undoubtedly a
+disappointment. Yet, it stood out as a once-in-a-lifetime event for
+many: the opportunity to see two greats of the global combat sports
+scene come together for one electrifying night simply sounded too good
+to be true.
+
+Despite the burning rivalry between Ali and Inoki leading into the
+fight, they reconciled following the fight and became close friends, as
+well as supporters of one another’s political ideologies. Both of them
+became political influencers in their respective homelands, with Ali
+remaining an integral part of the Muslim American and African American
+civil societies, and Antonio Inoki going on to establish his own
+political party in Japan: the Sports and Peace Party.
+
+In 1998, Antonio Inoki finally retired from the sport of professional
+wrestling. Among the audience members was Muhammad Ali, a
+foe-turned-friend, who after the match had this to say to audience
+members present: “It was 1976 when I fought Antonio Inoki at the
+Budokan. In the ring, we were tough opponents. After that, we built love
+and friendship with mutual respect. So, I feel a little less lonely now
+that Antonio has retired. It is my honour to be standing on the ring
+with my good friend after 22 years. Our future is bright and has a clear
+vision. Antonio Inoki and I put our best efforts into making world peace
+through sports, to prove there is only one mankind beyond the sexual,
+ethnic, or cultural differences. It is my pleasure to come here today.”
+
+With that ended the revolutionary, dynamic pairing of Ali and Inoki as
+the world ushered in a new age that beckoned acceptance and equality. In
+the end, both Ali and Inoki could rest easy and take pride in playing a
+big part in shaping that world, in spite of - or perhaps precisely
+because of - the fact that they were sportsmen.
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <hr>
+    </div>
+    <!--<section class="fdb-block pt-3 author-info">
+        <div class="container author-info">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-2"></div>
+                <div class="col-3 mt-4 mt-md-0 ml-auto mr-0 mr-md-0 author-container">
+                    <img alt="image" class="img-fluid author" src="../static/img/morris.jpg"/>
+                </div>
+                <div class="col-5">
+                    <p class="text-h3"><strong>Morris Yang</strong>&nbsp; &nbsp;&nbsp;<em>Writer</em></p>
+                    <small>
+                        Morris is a Junior College student who simply cannot stop thinking about what it means to think. (He says this not to posture himself intellectually.) Sit him down to discuss politics, or how we view and consume current affairs, or popular culture, or great literary works, or film, or philosophy, and he'll treat you to coffee. He also enjoys great music (right now it's his Spotify playlist, as will always be). The Timeless Compass, he thinks, provides a great opportunity to express his views and develop them in response to what his esteemed readers think.
+
+                        Contact: morrisycy@gmail.com
+                    </small>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+    </section>-->
+    <br>
+    <footer class="fdb-block footer-small">
+        <div class="container">
+            <div class="row text-center pb-0">
+                <div class="col">
+                    <p class="mb-0">&copy; 2018 The Timeless Compass. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
