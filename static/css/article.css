@@ -232,7 +232,8 @@ img + em{
 
 #markdown {
     margin-top: 2em;
-    font-family: "Roboto Light";
+    font-family: "Roboto";
+    font-weight: 200;
     text-align: justify;
 }
 

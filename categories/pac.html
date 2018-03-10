@@ -10,10 +10,10 @@
     <link type="text/css" rel="stylesheet" href="static/css/froala_blocks.css">
     <!--<link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet"> -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="static/js/try.js"></script>
-    <script type="text/javascript" src="static/js/Markdown.Converter.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/js/try.js"></script>
+    <script type="text/javascript" src="../static/js/Markdown.Converter.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="static/css/fonts/fonts.min.css" />
@@ -230,8 +230,8 @@
     <header class="header-custom">
         <div class="container" id="navbar-container">
             <nav class="navbar navbar-expand-md">
-                <a class="navbar-brand" href="index.html">
-                    <img src="static/img/logo_black.png" height="30" alt="The Timeless Compass" id="navbar-img">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../static/img/logo_black.png" height="30" alt="The Timeless Compass" id="navbar-img">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav3" aria-controls="navbarNav3" aria-expanded="false" aria-label="Toggle navigation">
@@ -241,29 +241,29 @@
                 <div class="collapse navbar-collapse" id="navbarNav3">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html"><strong>Home</strong></a>
+                            <a class="nav-link" href="../index.html"><strong>Home</strong></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html"><strong>About</strong></a>
+                            <a class="nav-link" href="../about.html"><strong>About</strong></a>
                         </li>
                     </ul>
                     <div class="dropdown">
                         <a id="categories" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"><strong>Categories</strong></a>
                         <ul class="dropdown-menu">
                             <li class="dropdown-menu-item">
-                                <a href="categories/pac.html">Politics and Current Affairs</a>
+                                <a href="pac.html">Politics and Current Affairs</a>
                             </li>
                             <li class="dropdown-menu-item">
-                                <a href="categories/lifestyle.html">Lifestyle</a>
+                                <a href="lifestyle.html">Lifestyle</a>
                             </li>
                             <li class="dropdown-menu-item">
-                                <a href="construction.html">Literature and Philosophy</a>
+                                <a href="../construction.html">Literature and Philosophy</a>
                             </li>
                             <li class="dropdown-menu-item">
-                                <a href="categories/sci_tech.html">Science and Technology</a>
+                                <a href="sci_tech.html">Science and Technology</a>
                             </li>
                             <li class="dropdown-menu-item">
-                                <a href="construction.html">Today in History</a>
+                                <a href="../construction.html">Today in History</a>
                             </li>
                         </ul>
                     </div>
@@ -273,84 +273,52 @@
     </header>
 
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 pl-0 pr-0 cover">
-                <a href="articles/olympics.html">
-                    <img alt="image" class="img-fluid cover-img mt-1" src="static/img/olympics/cover.jpg">
-                    <div class="cover-text">
-                        All That Glitters Is Not Gold: The Dark Side of the Olympics
-                    </div>
-                </a>
-            </div>
-        </div>
+        <div class="row mt-0 mb-1 mt-2 content-row"><h2> Politics and Current Affairs </h2><hr></div>
         <div class="row mt-0 mb-1 mt-2 content-row">
             <div class="col-4 block pr-1">
-                <a href="articles/bond.html">
-                    <img alt="image" class="img-fluid block-img " src="http://www.007.com/spectre/wp-content/uploads/2015/05/B24_33527_rv2.jpg">
-                    <div class="block-text">
-                        <strong>The Name’s Bond – James, Bonded to Ideology</strong>
-                        <p class="block-intro">The history and evolution of today's 'new' slang</p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-4 block pl-1 pr-1 text-center block" id="cent">
-                <div class="wrapper">
-                    <p> Find us @ </p>
-                    <p> <a href="https://www.instagram.com/thetimelesscompass/"><i class="fa fa-instagram" aria-hidden="true"></i></a> &nbsp;&nbsp;&nbsp; <a href="https://www.facebook.com/thetimelesscompass/"><i class="fa fa-facebook" aria-hidden="true"></i></a> &nbsp;&nbsp;&nbsp; <i class="fa fa-envelope-o" aria-hidden="true"></i><p>
-                </div>
-            </div>
-            <div class="col-4 block pl-1">
-                <a href="articles/slangs.html">
-                    <img alt="image" class="img-fluid block-img " src="static/img/slangs/media/cover.jpeg">
-                    <div class="block-text">
-                        <strong>Lit, Woke and Mug: The Etymology of Popular Slang Terms Today</strong>
-                        <p class="block-intro">The history and evolution of today's 'new' slang</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <!--<div class="row mt-1 mb-0 content-row">
-            <div class="col-4 block">
-                <img alt="image" class="img-fluid block-img " src="static/img/sample_1.jpg">
-                <div class="block-text">
-                    George Washington: Are His Monuments Untouchable?
-                </div>
-            </div>
-            <div class="col-4 justify-content-center text-center bg-dark block" id="cent">
-                <div class="wrapper">
-                    <p> Find us @ </p>
-                    <p> <i class="fa fa-instagram" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp; <i class="fa fa-facebook" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp; <i class="fa fa-envelope-o" aria-hidden="true"></i><p>
-                </div>
-            </div>
-            <div class="col-4 bg-dark align-content-center" id="circle-wrapper">
-                <div id="big-circle-thing" class='text-center justify-text-center'><p>About Us</p></div>
-            </div>
-        </div>-->
-        <div class="row mt-0 mb-1 mt-2 content-row">
-            <div class="col-4 block pr-1">
-                <a href="articles/canada.html">
+                <a href="../articles/canada.html">
                     <img alt="image" class="img-fluid block-img " src="https://www.indianz.com/News/2016/03/14/justintrudeau030416.jpg">
                     <div class="block-text">
                         <strong>First Nations of Canada: A History of Abuse</strong>
-                        <p class="block-intro">Canada and 50 Years of Atonement</p>
+                        <p class="block-intro">Canada and 50 years of atonement.</p>
                     </div>
                 </a>
             </div>
             <div class="col-4 block pl-1 pr-1">
-                <a href="articles/washington.html">
-                    <img alt="image" class="img-fluid block-img " src="static/img/washington/cover.jpg">
+                <a href="../articles/washington.html">
+                    <img alt="image" class="img-fluid block-img " src="../static/img/washington/cover.jpg">
                     <div class="block-text">
                         <strong>George Washington: Are His Monuments Untouchable?</strong>
-                        <p class="block-intro">America Really Loves George Washington - But does George Washington really deserve it?</p>
+                        <p class="block-intro">Americans seem aware of Washington's 'dark secrets'.</p>
                     </div>
                 </a>
             </div>
             <div class="col-4 block pl-1">
-                <a href="articles/un.html">
+                <a href="../articles/un.html">
                     <img alt="image" class="img-fluid block-img " src="https://schistoryday.files.wordpress.com/2013/11/united_nations_geneva_2010-07-01.jpg">
                     <div class="block-text">
                         <strong>UN Day 2017</strong>
-                        <p class="block-intro">The evolving unity and power of the united nations</p>
+                        <p class="block-intro">The evolving unity and power of the United Nations</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row mt-0 mb-1 mt-2 content-row">
+            <div class="col-4 block pr-1">
+                <a href="../articles/alexander_roshan.html">
+                    <img alt="image" class="img-fluid block-img " src="../static/img/alexander_roshan/cover.jpg">
+                    <div class="block-text">
+                        <strong>History Repeats Itself: Han-Minority Dual Structure in Contemporary Chinese Society</strong>
+                        <p class="block-intro"></p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-4 block pl-1 pr-1">
+                <a href="../articles/philippines.html">
+                    <img alt="image" class="img-fluid block-img " src="https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2016/05/04/103608093-GettyImages-527168214_[1].jpg?v=1462417920">
+                    <div class="block-text">
+                        <strong>The Philippines: People's Power Revolution</strong>
+                        <p class="block-intro"></p>
                     </div>
                 </a>
             </div>
